@@ -1,6 +1,7 @@
 html {
     overflow: scroll;
     overflow-x: hidden;
+    background: #1a202c;
 }
 ::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */

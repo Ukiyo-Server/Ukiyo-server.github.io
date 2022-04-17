@@ -1,0 +1,44 @@
+#
+# This file contains configuration flags to customize your site
+#
+
+# Name of your site
+title: Ukiyo|浮世
+SEOTitle: Ukiyo
+
+header-img: img/home-bg.jpg
+
+email: mailidleboy@gmail.com
+# Short bio or description (displayed in the header)
+description: ""
+
+keyword: "@idleboy4038, @idleboy, idleboy, Ukiyo, Ukiyo server, Ukiyo server owner"
+
+# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Used for Sitemap.xml and your RSS feed
+url: "https://ukiyo-server.github.io" 
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+baseurl: ""
+
+
+# Exclude these files from your production _site
+exclude: ["README.md","README.jp.md"]
+
+# Jekyll 3 now only supports Kramdown for Markdown
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
+
+# Use the following plug-ins
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
