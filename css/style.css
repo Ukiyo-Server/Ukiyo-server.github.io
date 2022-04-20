@@ -9,8 +9,6 @@ html {
 }
 
 body{
-    background-image: url('https://cdn.discordapp.com/attachments/937639456347942932/965115869854302208/bg.gif');
-    background-size: cover;
     height: 100vh;
     padding:0;
     margin:0;
