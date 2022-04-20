@@ -8,10 +8,7 @@ month: Apr
 year: 2022
 source: https://discord.com/channels/937243464079400990/964137735570993212/964140050910695494
 category: reviews
-review: I will rate the server 10/10.  
-They were alot of very nice people, Staffs are very kind, And there is alot of cool things!  
-Like bots,events and alot more!  
-Definitely recommend ❤️
+review: I will rate the server 10/10.  They were alot of very nice people, Staffs are very kind, And there is alot of cool things!  Like bots,events and alot more!  Definitely recommend ❤️
 
 ---
 
