@@ -42,3 +42,6 @@ kramdown:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  
+  - name: generate-sitemap
+  uses: cicirello/generate-sitemap@v1.8.3
