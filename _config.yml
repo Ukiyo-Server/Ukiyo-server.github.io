@@ -39,5 +39,5 @@ kramdown:
     css_class: 'highlight'
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
