@@ -1,10 +1,20 @@
-
 ---
 layout: default
-permalink: /404.html
-title: "Page not found"
-description: "Looks like there has been a mistake. Nothing exists here."
-redirect: true
+permalink: /404.htm
 ---
 
-<p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="{{ site.baseurl | prepend: site.url }}/">here</a>.</p>
+<script>
+    setTimeout(function () {
+        window.location.href = 'https://ukiyo-server.github.io/';
+    }, 3000);
+</script>
+
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full">
+            <h1 class="sm:text-3xl text-2xl font-medium bg-gray-900 title-font mb-4 text-white">You will be redirected
+                to the main page within 3 seconds. If not redirected, please click <a
+                    href="{{ site.baseurl | prepend: site.url }}/" class="text-indigo-400 inline-flex items-center">here</a>.</h1>
+        </div>
+    </div>
+</section>
