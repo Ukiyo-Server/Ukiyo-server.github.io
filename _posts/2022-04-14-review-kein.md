@@ -12,4 +12,4 @@ review: I will rate the server 10/10.  They were alot of very nice people, Staff
 
 ---
 
-
+I will rate the server 10/10.  They were alot of very nice people, Staffs are very kind, And there is alot of cool things!  Like bots,events and alot more!  Definitely recommend ❤️
