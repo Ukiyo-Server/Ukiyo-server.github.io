@@ -1,43 +1,51 @@
-#
-# This file contains configuration flags to customize your site
-#
+baseurl: '/'
+permalink: pretty
+title: 'Jekyll Serif'
 
-# Name of your site
-title: Ukiyo | 浮世
-SEOTitle: Ukiyo
+logo:
+  mobile: "images/logo/logo-mobile.svg"
+  mobile_height: "32px"
+  mobile_width: "32px"
+  desktop: "images/logo/logo.svg"
+  desktop_height: "32px"
+  desktop_width: "120px"
 
-header-img: asset/ukiyo_ico.ico
+home: 
+  limit_services: 6
 
-email: mailidleboy@gmail.com
-# Short bio or description (displayed in the header)
-description: "It is a Chill Japanese - English exchange server."
+collections:
+  services:
+    output: true
+    sort_by: weight
+  team:
+    output: true
 
-keyword: "Ukiyo, Ukiyo server, Ukiyo server owner, Japanese, Japanese server, Discord server, JLPT"
+defaults:
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "team"
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: "https://ukiyo-server.github.io" 
+sass:
+  style: compressed # possible values: nested expanded compact compressed
 
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
-
-
-# Exclude these files from your production _site
-exclude: ["README.md","README.jp.md"]
-
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
-
-# Use the following plug-ins
 plugins:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-environment-variables
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md
