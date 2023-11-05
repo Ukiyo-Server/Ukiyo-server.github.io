@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['node_modules/preline/dist/*.js', "./src/**/*.{html,js}"],
+  content: ['node_modules/preline/dist/*.js', "./**/*.{html,js}"],
   theme: {
     extend: {},
   },
