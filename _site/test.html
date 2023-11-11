@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+  <!-- Include Tailwind CSS -->
+  <link href="/assets/css//main.css" rel="stylesheet">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>test | Ukiyo</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="test" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/test.html" />
+<meta property="og:url" content="http://localhost:4000/test.html" />
+<meta property="og:site_name" content="Ukiyo" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="test" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","dateModified":"2023-11-11T19:49:06+05:30","headline":"test","url":"http://localhost:4000/test.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+
+  <!-- Notice div -->
+  <div id="cookieNotice" class="fixed bottom-0 left-0 w-full bg-gray-800 text-black p-4">
+    <p>
+      By continuing to use this site you consent to the use of cookies in accordance with our Cookies Policy.
+    </p>
+    <button id="closeButton" class="mt-2 bg-white text-gray-800 px-4 py-2">Close</button>
+  </div>
+
+  <!-- Your website content goes here -->
+
+  <script>
+    // Function to set a cookie
+    function setCookie(name, value, days) {
+      var expires = "";
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    // Function to get a cookie by name
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
+
+    // Function to hide the notice if the cookie is set
+    function checkCookie() {
+      var cookieNotice = document.getElementById('cookieNotice');
+      var closeButton = document.getElementById('closeButton');
+
+      // Check if the 'hideNotice' cookie is set
+      if (getCookie('hideNotice')) {
+        cookieNotice.style.display = 'none';
+      }
+
+      // Add click event listener to the close button
+      closeButton.addEventListener('click', function () {
+        // Set the 'hideNotice' cookie when the user clicks the close button
+        setCookie('hideNotice', true, 365);
+        cookieNotice.style.display = 'none';
+      });
+    }
+
+    // Run the checkCookie function when the DOM is ready
+    document.addEventListener('DOMContentLoaded', checkCookie);
+  </script>
+
+</body>
+</html>

@@ -5,243 +5,234 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ukiyo | Home</title>
-    <link rel="stylesheet" href="/output.css">
+    <link rel="stylesheet" href="/assets/css/main.css"">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Ukiyo</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Ukiyo" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="It is a Chill Japanese - English exchange server. Where you can get JLPT updates, best resource, helpful members, and much more. Join now." />
+<meta property="og:description" content="It is a Chill Japanese - English exchange server. Where you can get JLPT updates, best resource, helpful members, and much more. Join now." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Ukiyo" />
+<meta property="og:image" content="http://localhost:4000/assets/images/seo_banner.gif" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/images/seo_banner.gif" />
+<meta property="twitter:title" content="Ukiyo" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","dateModified":"2023-11-05T15:30:00+05:30","description":"It is a Chill Japanese - English exchange server. Where you can get JLPT updates, best resource, helpful members, and much more. Join now.","headline":"Ukiyo","image":"http://localhost:4000/assets/images/seo_banner.gif","name":"Ukiyo","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+
 </head>
 
 <body class="dark:text-white dark:bg-slate-800 flex items-center flex-col">
     <header class="z-30 w-full px-2 py-4 sm:px-4">
 
-        <div class="flex items-center justify-between lg:mx-8 sm:mx-4">
-            <a href="/" title="Ukiyo | Home" class="flex items-center space-x-1">
-                <img src="/assets/icons/whiteCat.svg" alt="Ukiyo the Cat" srcset="" class="w-auto h-10 ">
-                <img src="/assets/icons/UkiyoBold.svg" alt="Ukiyo" class="w-auto h-6">
-                <span class="sr-only">Ukiyo</span>
-            </a>
-            <!-- Navbar Start -->
-            <div class="relative hidden space-x-1 md:inline-flex dark:text-white dark:bg-slate-800  "
-                x-data="{ one: false, two: false }">
-                <a href="/" class="rounded-full btn btn-sm dark:hover:bg-blue-700">Home</a>
-                <div class="relative">
-                    <buttons
-                        class="flex items-center rounded-full btn btn-sm dark:hover:bg-blue-700 dark:text-white dark:bg-slate-800"
-                        @click="one = true">
-                        Library
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
-                            class="flex-none w-4 h-4 ml-1 -mr-1 transition duration-200 ease-out transform"
-                            :class="{ 'rotate-180': one }">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                        </button>
-                        <div class="absolute top-0 z-50 w-screen max-w-md p-2 mx-0 my-12 text-sm text-gray-800 transform bg-white rounded shadow lg:left-1/2 lg:-translate-x-1/2 dark:text-white dark:bg-slate-800 "
-                            x-show.transition.in.opacity.out.opacity="one" @click.away="one = false" x-cloak>
-                            <div class="grid grid-cols-2 gap-2 mb-2">
-                                <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
-                                    <p class="font-semibold">Beginner Guide</p>
-                                    MStart your Japanese journey with the basics.
-                                </a>
-                                <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
-                                    <p class="font-semibold">Textbooks</p>
-                                    Explore recommended textbooks for structured learning.
-                                </a>
-                                <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
-                                    <p class="font-semibold">Course</p>
-                                    Access online courses to boost your language skills.
-                                </a>
-                                <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
-                                    <p class="font-semibold">Hiragana & Katakana</p>
-                                    Master the Japanese scripts with our resources.
-                                </a>
-                                <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
-                                    <p class="font-semibold">Softwares</p>
-                                    Explore language learning software and tools.
-                                </a>
-                            </div>
-                            <a href="/library"
-                                class="flex items-center justify-center p-3 font-medium transition bg-gray-200 rounded text-primary hover:bg-gray-300">
-                                Check all resources
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" aria-hidden="true" class="w-4 h-4 ml-1">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </a>
-                        </div>
-                </div>
-                <div class="relative">
-                    <button
-                        class="flex items-center rounded-full btn btn-sm dark:hover:bg-blue-700 dark:text-white dark:bg-slate-800"
-                        @click="two = true">
-                        Blogs
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
-                            class="flex-none w-4 h-4 ml-1 -mr-1 transition duration-200 ease-out transform"
-                            :class="{ 'rotate-180': two }">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </button>
-                    <div class="absolute top-0 z-50 w-screen max-w-md p-2 mx-0 my-12 text-sm text-gray-800 transform bg-white dark:text-white dark:bg-slate-800 rounded shadow lg:left-1/2 lg:-translate-x-1/2"
-                        x-show.transition.in.opacity.out.opacity="two" @click.away="two = false" x-cloak>
-                        <p class="pt-2 pl-3 mb-1 text-xs font-semibold tracking-wide text-gray-500 uppercase">Our
-                            popular
-                            Blogs</p>
-                        <div
-                            class="flex flex-col space-y-1 font-medium text-gray-800 dark:text-white dark:bg-slate-800">
-                            <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
-                                Comming soon </a>
-                            <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Coming
-                                Soon</a>
-                            <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
-                                Coming soon </a>
-                            <a href="#"
-                                class="flex items-center justify-center p-3 transition bg-gray-200 rounded text-primary hover:bg-gray-300">
-                                View all blog posts
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" aria-hidden="true" class="w-4 h-4 ml-1">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <a href="/about-us/" class="rounded-full btn btn-sm dark:hover:bg-blue-700">About Us</a>
-            </div>
-            <div class="flex items-center space-x-4">
-                <a href="https://discord.gg/ukiyo-fu-shi-937243464079400990"
-                    class="rounded-full btn btn-sm btn-dark bg-blue-600 hover:bg-blue-700 border border-transparent">Join
-                    now!</a>
-                <div class="inline-flex md:hidden" x-data="{ open: false }">
-                    <button class="flex-none px-2 btn btn-white btn-sm " @click="open = true">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
-                            class="w-5 h-5">
-                            <line x1="3" y1="12" x2="21" y2="12"></line>
-                            <line x1="3" y1="6" x2="21" y2="6"></line>
-                            <line x1="3" y1="18" x2="21" y2="18"></line>
-                        </svg>
-                        <span class="sr-only">Open Menu</span>
-                    </button>
-                    <div class="absolute top-0 left-0 right-0 z-50 flex flex-col p-2 m-2 space-y-1 bg-white rounded shadow dark:text-white dark:bg-slate-800"
-                        x-show.transition="open" @click.away="open = false" x-cloak>
-                        <button class="self-end flex-none px-2 btn btn-link btn-icon bg-slate-300"
-                            @click="open = false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" aria-hidden="true">
-                                <line x1="18" y1="6" x2="6" y2="18"></line>
-                                <line x1="6" y1="6" x2="18" y2="18"></line>
-                            </svg>
-                            <span class="sr-only">Close Menu</span>
-                        </button>
-                        <div class="grid grid-cols-2 gap-1">
-                            <a href="#"
-                                class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Pricing</a>
-                            <a href="#"
-                                class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Tools</a>
-                        </div>
-                        <p class="pt-2 pl-3 text-xs font-semibold tracking-wide text-gray-500 uppercase">Features</p>
-                        <div class="grid grid-cols-2 gap-1">
-                            <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Shared
-                                Inbox</a>
-                            <a href="#"
-                                class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Reporting</a>
-                            <a href="#"
-                                class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Knowledge
-                                Base</a>
-                            <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Live
-                                Chat</a>
-                            <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">In-app
-                                Messaging</a>
-                        </div>
-                        <a href="#"
-                            class="flex items-center justify-center p-3 font-medium transition bg-gray-200 rounded text-primary hover:bg-gray-300">
-                            View all features
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" aria-hidden="true" class="w-4 h-4 ml-1">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero -->
+  <div class="flex items-center justify-between lg:mx-8 sm:mx-4">
+      <a href="/" title="Ukiyo | Home" class="flex items-center space-x-1">
+          <img src="/assets/icons/logo-black.svg" alt="Ukiyo the Cat" srcset="" class="w-auto h-10 ">
+          <img src="/assets/icons/UkiyoBold.svg" alt="Ukiyo" class="w-auto h-6">
+          <span class="sr-only">Ukiyo</span>
+      </a>
+      <!-- Navbar Start -->
+      <div class="relative hidden space-x-1 md:inline-flex dark:text-white dark:bg-slate-800  "
+          x-data="{ one: false, two: false }">
+          <a href="/" class="rounded-full btn btn-sm dark:hover:bg-blue-700">Home</a>
+          <div class="relative">
+              <buttons
+                  class="flex items-center rounded-full btn btn-sm dark:hover:bg-blue-700 dark:text-white dark:bg-slate-800"
+                  @click="one = true">
+                  Library
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                      class="flex-none w-4 h-4 ml-1 -mr-1 transition duration-200 ease-out transform"
+                      :class="{ 'rotate-180': one }">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                  </button>
+                  <div class="absolute top-0 z-50 w-screen max-w-md p-2 mx-0 my-12 text-sm text-gray-800 transform bg-white rounded shadow lg:left-1/2 lg:-translate-x-1/2 dark:text-white dark:bg-slate-800 "
+                      x-show.transition.in.opacity.out.opacity="one" @click.away="one = false" x-cloak>
+                      <div class="grid grid-cols-2 gap-2 mb-2">
+                          <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                              <p class="font-semibold">Beginner Guide</p>
+                              MStart your Japanese journey with the basics.
+                          </a>
+                          <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                              <p class="font-semibold">Textbooks</p>
+                              Explore recommended textbooks for structured learning.
+                          </a>
+                          <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                              <p class="font-semibold">Course</p>
+                              Access online courses to boost your language skills.
+                          </a>
+                          <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                              <p class="font-semibold">Hiragana & Katakana</p>
+                              Master the Japanese scripts with our resources.
+                          </a>
+                          <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                              <p class="font-semibold">Softwares</p>
+                              Explore language learning software and tools.
+                          </a>
+                      </div>
+                      <a href="/library"
+                          class="flex items-center justify-center p-3 font-medium transition bg-gray-200 rounded text-primary hover:bg-gray-300">
+                          Check all resources
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" aria-hidden="true" class="w-4 h-4 ml-1">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                              <polyline points="12 5 19 12 12 19"></polyline>
+                          </svg>
+                      </a>
+                  </div>
+          </div>
+          <div class="relative">
+              <button
+                  class="flex items-center rounded-full btn btn-sm dark:hover:bg-blue-700 dark:text-white dark:bg-slate-800"
+                  @click="two = true">
+                  Blogs
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                      class="flex-none w-4 h-4 ml-1 -mr-1 transition duration-200 ease-out transform"
+                      :class="{ 'rotate-180': two }">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+              </button>
+              <div class="absolute top-0 z-50 w-screen max-w-md p-2 mx-0 my-12 text-sm text-gray-800 transform bg-white dark:text-white dark:bg-slate-800 rounded shadow lg:left-1/2 lg:-translate-x-1/2"
+                  x-show.transition.in.opacity.out.opacity="two" @click.away="two = false" x-cloak>
+                  <p class="pt-2 pl-3 mb-1 text-xs font-semibold tracking-wide text-gray-500 uppercase">Our
+                      popular
+                      Blogs</p>
+                  <div
+                      class="flex flex-col space-y-1 font-medium text-gray-800 dark:text-white dark:bg-slate-800">
+                      <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                          Comming soon </a>
+                      <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Coming
+                          Soon</a>
+                      <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                          Coming soon </a>
+                      <a href="#"
+                          class="flex items-center justify-center p-3 transition bg-gray-200 rounded text-primary hover:bg-gray-300">
+                          View all blog posts
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round" aria-hidden="true" class="w-4 h-4 ml-1">
+                              <line x1="5" y1="12" x2="19" y2="12"></line>
+                              <polyline points="12 5 19 12 12 19"></polyline>
+                          </svg>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <a href="/about-us/" class="rounded-full btn btn-sm dark:hover:bg-blue-700">About Us</a>
+      </div>
+      <div class="flex items-center space-x-4">
+          <a href="https://discord.gg/ukiyo-fu-shi-937243464079400990"
+              class="rounded-full btn btn-sm btn-dark bg-blue-600 hover:bg-blue-700 border border-transparent">Join
+              now!</a>
+          <div class="inline-flex md:hidden" x-data="{ open: false }">
+              <button class="flex-none px-2 btn btn-white btn-sm " @click="open = true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                      class="w-5 h-5">
+                      <line x1="3" y1="12" x2="21" y2="12"></line>
+                      <line x1="3" y1="6" x2="21" y2="6"></line>
+                      <line x1="3" y1="18" x2="21" y2="18"></line>
+                  </svg>
+                  <span class="sr-only">Open Menu</span>
+              </button>
+              <div class="absolute top-0 left-0 right-0 z-50 flex flex-col p-2 m-2 space-y-1 bg-white rounded shadow dark:text-white dark:bg-slate-800"
+                  x-show.transition="open" @click.away="open = false" x-cloak>
+                  <button class="self-end flex-none px-2 btn btn-link btn-icon bg-slate-300"
+                      @click="open = false">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true">
+                          <line x1="18" y1="6" x2="6" y2="18"></line>
+                          <line x1="6" y1="6" x2="18" y2="18"></line>
+                      </svg>
+                      <span class="sr-only">Close Menu</span>
+                  </button>
+                  <div class="grid grid-cols-2 gap-1">
+                      <a href="#"
+                          class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Pricing</a>
+                      <a href="#"
+                          class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Tools</a>
+                  </div>
+                  <p class="pt-2 pl-3 text-xs font-semibold tracking-wide text-gray-500 uppercase">Features</p>
+                  <div class="grid grid-cols-2 gap-1">
+                      <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Shared
+                          Inbox</a>
+                      <a href="#"
+                          class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Reporting</a>
+                      <a href="#"
+                          class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Knowledge
+                          Base</a>
+                      <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Live
+                          Chat</a>
+                      <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">In-app
+                          Messaging</a>
+                  </div>
+                  <a href="#"
+                      class="flex items-center justify-center p-3 font-medium transition bg-gray-200 rounded text-primary hover:bg-gray-300">
+                      View all features
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" aria-hidden="true" class="w-4 h-4 ml-1">
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                          <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+        <!-- Hero -->
     <div class="lg:mx-8 py-4 px-4 sm:px-8 m:mx-4 lg:px-8 mx-4 rounded-md bg-[#05a863]">
-        <!-- Grid -->
-        <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
-            <div>
-                <h1
-                    class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
-                    <span class="text-blue-600">Ukiyo: </span>A Haven for Language Learners
-                </h1>
-                <p class="mt-3 text-lg text-gray-800 dark:text-white">Don't know where to start, how to learn or
-                    can't find friends.</p>
+      <!-- Grid -->
+      <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+          <div>
+              <h1
+                  class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
+                  <span class="text-blue-600">Ukiyo: </span>A Haven for Language Learners
+              </h1>
+              <p class="mt-3 text-lg text-gray-800 dark:text-white">Don't know where to start, how to learn or
+                  can't find friends.</p>
 
-                <!-- Buttons -->
-                <div class="mt-7 grid gap-3 w-full sm:inline-flex">
-                    <a class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
-                        href="https://discord.gg/ukiyo-fu-shi-937243464079400990">
-                        Join Now!
-                        <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path
-                                d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                        </svg>
-                    </a>
-                    <a class="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border hover:border-gray-300 shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 dark:shadow-slate-700/[.7] dark:text-white dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800 text-black"
-                        href="/get-started">
-                        Get started
-                    </a>
-                </div>
-            </div>
-            <!-- End Col -->
+              <!-- Buttons -->
+              <div class="mt-7 grid gap-3 w-full sm:inline-flex">
+                  <a class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+                      href="https://discord.gg/ukiyo-fu-shi-937243464079400990">
+                      Join Now!
+                      <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                          <path
+                              d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                      </svg>
+                  </a>
+                  <a class="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border hover:border-gray-300 shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 dark:shadow-slate-700/[.7] dark:text-white dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800 text-black"
+                      href="/get-started">
+                      Get started
+                  </a>
+              </div>
+          </div>
+          <!-- End Col -->
 
-            <div class="relative ml-4">
-                <img class="w-full rounded-md" src="assets/images/heroBanner.svg" alt="Image Description">
-                <div class="flex flex-row justify-end">
-                    <a href="https://dribbble.com/manuel-corsi-manu" target="_blank" rel="noopener">Art by Manu</a>
-                </div>
-            </div>
-            <!-- End Col -->
-        </div>
-        <!-- End Grid -->
-    </div>
-    <!-- End Hero -->
-
-    <!-- Cookies -->
-    <div id="cookies-simple-with-dismiss-button"
-        class="fixed bottom-0 left-1/2 transform -translate-x-1/2 z-[60] sm:max-w-4xl w-full mx-auto p-6">
-        <div class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700">
-            <div class="flex justify-between items-center gap-x-5 sm:gap-x-10">
-                <h2 class="text-sm text-gray-600 dark:text-gray-400">
-                    By continuing to use this site you consent to the use of cookies in accordance with our <a
-                        class="inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium"
-                        href="#">Cookies Policy.</a>
-                </h2>
-                <button type="button"
-                    class="inline-flex bg-gray-200 rounded-full p-3 text-gray-500 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-400"
-                    data-hs-remove-element="#cookies-simple-with-dismiss-button" id="cookies-dismiss-btn">
-                    <span class="sr-only">Dismiss</span>
-                    <svg class="h-3 w-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path
-                            d="M0.92524 0.687069C1.126 0.486219 1.39823 0.373377 1.68209 0.373377C1.96597 0.373377 2.2382 0.486219 2.43894 0.687069L8.10514 6.35813L13.7714 0.687069C13.8701 0.584748 13.9882 0.503105 14.1188 0.446962C14.2494 0.39082 14.3899 0.361248 14.5321 0.360026C14.6742 0.358783 14.8151 0.38589 14.9468 0.439762C15.0782 0.493633 15.1977 0.573197 15.2983 0.673783C15.3987 0.774389 15.4784 0.894026 15.5321 1.02568C15.5859 1.15736 15.6131 1.29845 15.6118 1.44071C15.6105 1.58297 15.5809 1.72357 15.5248 1.85428C15.4688 1.98499 15.3872 2.10324 15.2851 2.20206L9.61883 7.87312L15.2851 13.5441C15.4801 13.7462 15.588 14.0168 15.5854 14.2977C15.5831 14.5787 15.4705 14.8474 15.272 15.046C15.0735 15.2449 14.805 15.3574 14.5244 15.3599C14.2437 15.3623 13.9733 15.2543 13.7714 15.0591L8.10514 9.38812L2.43894 15.0591C2.23704 15.2543 1.96663 15.3623 1.68594 15.3599C1.40526 15.3574 1.13677 15.2449 0.938279 15.046C0.739807 14.8474 0.627232 14.5787 0.624791 14.2977C0.62235 14.0168 0.730236 13.7462 0.92524 13.5441L6.59144 7.87312L0.92524 2.20206C0.724562 2.00115 0.611816 1.72867 0.611816 1.44457C0.611816 1.16047 0.724562 0.887983 0.92524 0.687069Z"
-                            fill="currentColor" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- End Cookies -->
-
-    <!-- Icon Blocks -->
+          <div class="relative ml-4">
+              <img class="w-full rounded-md" src="/assets/images/hero-img.svg" alt="Image Description">
+              <div class="flex flex-row justify-end">
+                  <a href="https://dribbble.com/manuel-corsi-manu" target="_blank" rel="noopener">Art by Manu</a>
+              </div>
+          </div>
+          <!-- End Col -->
+      </div>
+      <!-- End Grid -->
+  </div>
+  <!-- End Hero -->
+        <!-- Features -->
     <div class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-4 my-8 lg:mx-8 rounded-md">
         <div class=" mx-auto">
             <!-- Grid -->
@@ -381,9 +372,8 @@
             <!-- End Grid -->
         </div>
     </div>
-    <!-- End Icon Blocks -->
-
-    <!-- Card Blog -->
+    <!-- End Features -->
+        <!-- Card Blog -->
     <div class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-4 lg:mx-8">
         <!-- Title -->
         <div class="max-w-2xl text-center mx-auto mb-10 lg:mb-14">
@@ -499,8 +489,7 @@
         <!-- End Card -->
     </div>
     <!-- End Card Blog -->
-
-    <!-- Testimonials -->
+        <!-- Testimonials -->
     <div class="px-4 py-4 sm:px-6 lg:px-8 lg:py-8 mx-4 lg:mx-8">
         <!-- Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -585,8 +574,7 @@
         <!-- End Grid -->
     </div>
     <!-- End Testimonials -->
-
-    <!-- FAQ -->
+        <!-- FAQ -->
     <div class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 lg:mx-8 mx-4">
         <!-- Grid -->
         <div class="grid md:grid-cols-5 gap-10">
@@ -793,8 +781,7 @@
         <!-- End Grid -->
     </div>
     <!-- End FAQ -->
-
-    <!-- Footer -->
+        <!-- Footer -->
     <footer class="w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto">
         <!-- Grid -->
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-10 mx-4">
@@ -915,10 +902,35 @@
         </div>
     </footer>
     <!-- End Footer -->
-
-    <!-- Scripts -->
-
-    <script src="/node_modules/preline/dist/preline.js"></script>
+        <!-- Cookies -->
+    <div id="cookies-simple-with-dismiss-button"
+        class="fixed bottom-0 left-1/2 transform -translate-x-1/2 z-[60] sm:max-w-4xl w-full mx-auto p-6 hidden">
+        <div class="p-4 bg-white border border-gray-200 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex justify-between items-center gap-x-5 sm:gap-x-10">
+                <h2 class="text-sm text-gray-600 dark:text-gray-400">
+                    By continuing to use this site you consent to the use of cookies in accordance with our <a
+                        class="inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium"
+                        href="#">Cookies Policy.</a>
+                </h2>
+                <button type="button"
+                    class="inline-flex bg-gray-200 rounded-full p-3 text-gray-500 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-400"
+                    data-hs-remove-element="#cookies-simple-with-dismiss-button" id="cookies-dismiss-btn">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="h-3 w-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path
+                            d="M0.92524 0.687069C1.126 0.486219 1.39823 0.373377 1.68209 0.373377C1.96597 0.373377 2.2382 0.486219 2.43894 0.687069L8.10514 6.35813L13.7714 0.687069C13.8701 0.584748 13.9882 0.503105 14.1188 0.446962C14.2494 0.39082 14.3899 0.361248 14.5321 0.360026C14.6742 0.358783 14.8151 0.38589 14.9468 0.439762C15.0782 0.493633 15.1977 0.573197 15.2983 0.673783C15.3987 0.774389 15.4784 0.894026 15.5321 1.02568C15.5859 1.15736 15.6131 1.29845 15.6118 1.44071C15.6105 1.58297 15.5809 1.72357 15.5248 1.85428C15.4688 1.98499 15.3872 2.10324 15.2851 2.20206L9.61883 7.87312L15.2851 13.5441C15.4801 13.7462 15.588 14.0168 15.5854 14.2977C15.5831 14.5787 15.4705 14.8474 15.272 15.046C15.0735 15.2449 14.805 15.3574 14.5244 15.3599C14.2437 15.3623 13.9733 15.2543 13.7714 15.0591L8.10514 9.38812L2.43894 15.0591C2.23704 15.2543 1.96663 15.3623 1.68594 15.3599C1.40526 15.3574 1.13677 15.2449 0.938279 15.046C0.739807 14.8474 0.627232 14.5787 0.624791 14.2977C0.62235 14.0168 0.730236 13.7462 0.92524 13.5441L6.59144 7.87312L0.92524 2.20206C0.724562 2.00115 0.611816 1.72867 0.611816 1.44457C0.611816 1.16047 0.724562 0.887983 0.92524 0.687069Z"
+                            fill="currentColor" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- End Cookies -->
+        <!-- Scripts -->
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/preline.js"></script>
     <!-- All components in one -->
     <script src="https://cdn.jsdelivr.net/npm/kutty@latest/dist/kutty.min.js"></script>
     <!-- Single component -->
@@ -926,10 +938,10 @@
     <script src="https://cdn.jsdelivr.net/npm/kutty@latest/dist/alpinejs.min.js"></script>
     <!-- And then the single component -->
     <script src="https://cdn.jsdelivr.net/npm/kutty@latest/dist/dropdown.min.js"></script>
-    <script src="/script.js"></script>
     <!-- End Scripts -->
+    <script>
 
-    <!-- Tag -->
+    </script>
 </body>
 
 </html>
