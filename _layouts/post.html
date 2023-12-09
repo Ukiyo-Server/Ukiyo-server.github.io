@@ -10,14 +10,9 @@
 </head>
 
 <body class="dark:text-white dark:bg-slate-800 flex items-center flex-col">
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
-    {% include cookieNotice.html %}
-    {% include scripts.html %}
-    <script>
-
-    </script>
+    <div class="prose">
+        {{ content }}
+    </div>
 </body>
 
 </html>
