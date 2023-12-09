@@ -7,3 +7,4 @@ gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
 gem "jekyll-last-modified-at"
 gem 'jekyll-feed'
+gem "jekyll-paginate"

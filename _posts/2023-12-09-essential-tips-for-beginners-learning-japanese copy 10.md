@@ -2,6 +2,10 @@
 layout: post
 title: Essential Tips for Beginners Learning Japanese
 author: Idle Boy
+author_image: https://kutty.netlify.app/placeholder.jpg
+image: https://kutty.netlify.app/brand/og.png
+tags: Japanese N5 Starter-Guide
+category: Guides
 ---
 
 Learning a new language can be a thrilling and rewarding experience. If you're starting your journey with Japanese, here are some essential tips to keep in mind.

@@ -2108,8 +2108,16 @@ a.dropdown-item, .prose a.dropdown-item {
   margin-bottom: 2.5rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .mb-auto {
@@ -2812,6 +2820,11 @@ a.dropdown-item, .prose a.dropdown-item {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-\[10px\] {
   font-size: 10px;
 }
@@ -2877,6 +2890,10 @@ a.dropdown-item, .prose a.dropdown-item {
   letter-spacing: 0.025em;
 }
 
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -2895,6 +2912,11 @@ a.dropdown-item, .prose a.dropdown-item {
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .text-gray-800 {
@@ -3067,6 +3089,11 @@ a.dropdown-item, .prose a.dropdown-item {
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(109 40 217 / var(--tw-text-opacity));
+}
+
+.hover\:text-primary-dark:hover {
+  --tw-text-opacity: 1;
+  color: rgb(76 29 149 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -3366,10 +3393,6 @@ a.dropdown-item, .prose a.dropdown-item {
     display: inline-flex;
   }
 
-  .sm\:hidden {
-    display: none;
-  }
-
   .sm\:h-full {
     height: 100%;
   }
@@ -3482,6 +3505,10 @@ a.dropdown-item, .prose a.dropdown-item {
     display: none;
   }
 
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3526,6 +3553,11 @@ a.dropdown-item, .prose a.dropdown-item {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:text-lg {
@@ -3585,10 +3617,6 @@ a.dropdown-item, .prose a.dropdown-item {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:gap-12 {
