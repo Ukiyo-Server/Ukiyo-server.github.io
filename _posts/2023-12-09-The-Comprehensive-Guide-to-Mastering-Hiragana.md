@@ -24,12 +24,19 @@ Hiragana, an essential part of the Japanese writing system, is a syllabary used 
 
 ### The Basic Hiragana Chart
 
-| Vowels  | a  | i   | u   | e   | o   |
-|---------|----|-----|-----|-----|-----|
-| (None)  | あ | い  | う  | え  | お  |
-| K       | か | き  | く  | け  | こ  |
-| S       | さ | し  | す  | せ  | そ  |
-| ...     |    |     |     |     |     |
+| Vowels | a  | i  | u  | e  | o  |
+|--------|----|----|----|----|----|
+| **(None)** | あ | い | う | え | お |
+| **K**      | か | き | く | け | こ |
+| **S**      | さ | し | す | せ | そ |
+| **T**      | た | ち | つ | て | と |
+| **N**      | な | に | ぬ | ね | の |
+| **H**      | は | ひ | ふ | へ | ほ |
+| **M**      | ま | み | む | め | も |
+| **Y**      | や |    | ゆ |    | よ |
+| **R**      | ら | り | る | れ | ろ |
+| **W**      | わ |    |    |    | を |
+| **N (ん)** | ん |    |    |    |    |
 
 *The chart continues with T, N, H, M, Y, R, W, and N series.*
 
