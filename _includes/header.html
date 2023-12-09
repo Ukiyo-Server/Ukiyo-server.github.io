@@ -11,7 +11,7 @@
             x-data="{ one: false, two: false }">
             <a href="/" class="rounded-full btn btn-sm dark:hover:bg-blue-700">Home</a>
             <div class="relative">
-                <buttons
+                <button
                     class="flex items-center rounded-full btn btn-sm dark:hover:bg-blue-700 dark:text-white dark:bg-slate-800"
                     @click="one = true">
                     Library
@@ -21,42 +21,42 @@
                         :class="{ 'rotate-180': one }">
                         <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
-                    </button>
-                    <div class="absolute top-0 z-50 w-screen max-w-md p-2 mx-0 my-12 text-sm text-gray-800 transform bg-white rounded shadow lg:left-1/2 lg:-translate-x-1/2 dark:text-white dark:bg-slate-800 "
-                        x-show.transition.in.opacity.out.opacity="one" @click.away="one = false" x-cloak>
-                        <div class="grid grid-cols-2 gap-2 mb-2">
-                            <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
-                                <p class="font-semibold">Beginner Guide</p>
-                                MStart your Japanese journey with the basics.
-                            </a>
-                            <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
-                                <p class="font-semibold">Textbooks</p>
-                                Explore recommended textbooks for structured learning.
-                            </a>
-                            <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
-                                <p class="font-semibold">Course</p>
-                                Access online courses to boost your language skills.
-                            </a>
-                            <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
-                                <p class="font-semibold">Hiragana & Katakana</p>
-                                Master the Japanese scripts with our resources.
-                            </a>
-                            <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
-                                <p class="font-semibold">Softwares</p>
-                                Explore language learning software and tools.
-                            </a>
-                        </div>
-                        <a href="/library"
-                            class="flex items-center justify-center p-3 font-medium transition bg-gray-200 rounded text-primary hover:bg-gray-300">
-                            Check all resources
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" aria-hidden="true" class="w-4 h-4 ml-1">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
+                </button>
+                <div class="absolute top-0 z-50 w-screen max-w-md p-2 mx-0 my-12 text-sm text-gray-800 transform bg-white rounded shadow lg:left-1/2 lg:-translate-x-1/2 dark:text-white dark:bg-slate-800 "
+                    x-show.transition.in.opacity.out.opacity="one" @click.away="one = false" x-cloak>
+                    <div class="grid grid-cols-2 gap-2 mb-2">
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                            <p class="font-semibold">Beginner Guide</p>
+                            MStart your Japanese journey with the basics.
+                        </a>
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                            <p class="font-semibold">Textbooks</p>
+                            Explore recommended textbooks for structured learning.
+                        </a>
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                            <p class="font-semibold">Course</p>
+                            Access online courses to boost your language skills.
+                        </a>
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                            <p class="font-semibold">Hiragana & Katakana</p>
+                            Master the Japanese scripts with our resources.
+                        </a>
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                            <p class="font-semibold">Softwares</p>
+                            Explore language learning software and tools.
                         </a>
                     </div>
+                    <a href="/library"
+                        class="flex items-center justify-center p-3 font-medium transition bg-gray-200 rounded text-primary hover:bg-gray-300">
+                        Check all resources
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" class="w-4 h-4 ml-1">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
             </div>
             <div class="relative">
                 <button
@@ -82,7 +82,7 @@
                             Soon</a>
                         <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
                             Coming soon </a>
-                        <a href="#"
+                        <a href="/blogs"
                             class="flex items-center justify-center p-3 transition bg-gray-200 rounded text-primary hover:bg-gray-300">
                             View all blog posts
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
