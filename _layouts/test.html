@@ -1,70 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Website</title>
-  <!-- Include Tailwind CSS -->
-  <link href="/assets/css//main.css" rel="stylesheet">
+  <title>Ukiyo | Home</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
   {% seo %}
 </head>
-<body>
 
-  <!-- Notice div -->
-  <div id="cookieNotice" class="fixed bottom-0 left-0 w-full bg-gray-800 text-black p-4">
-    <p>
-      By continuing to use this site you consent to the use of cookies in accordance with our Cookies Policy.
-    </p>
-    <button id="closeButton" class="mt-2 bg-white text-gray-800 px-4 py-2">Close</button>
-  </div>
-
-  <!-- Your website content goes here -->
-
+<body class="dark:text-white dark:bg-slate-800 flex items-center flex-col">
+  {% include header.html %}
+  {% include team.html %}
+  {% include footer.html %}
+  {% include cookieNotice.html %}
+  {% include scripts.html %}
   <script>
-    // Function to set a cookie
-    function setCookie(name, value, days) {
-      var expires = "";
-      if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-        expires = "; expires=" + date.toUTCString();
-      }
-      document.cookie = name + "=" + (value || "") + expires + "; path=/";
-    }
 
-    // Function to get a cookie by name
-    function getCookie(name) {
-      var nameEQ = name + "=";
-      var ca = document.cookie.split(';');
-      for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-      }
-      return null;
-    }
-
-    // Function to hide the notice if the cookie is set
-    function checkCookie() {
-      var cookieNotice = document.getElementById('cookieNotice');
-      var closeButton = document.getElementById('closeButton');
-
-      // Check if the 'hideNotice' cookie is set
-      if (getCookie('hideNotice')) {
-        cookieNotice.style.display = 'none';
-      }
-
-      // Add click event listener to the close button
-      closeButton.addEventListener('click', function () {
-        // Set the 'hideNotice' cookie when the user clicks the close button
-        setCookie('hideNotice', true, 365);
-        cookieNotice.style.display = 'none';
-      });
-    }
-
-    // Run the checkCookie function when the DOM is ready
-    document.addEventListener('DOMContentLoaded', checkCookie);
   </script>
-
 </body>
+
 </html>
