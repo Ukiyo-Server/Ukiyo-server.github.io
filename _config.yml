@@ -1,0 +1,24 @@
+url: "http://ukiyo-server.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Ukiyo | 浮世" # the name of your site, e.g. ACME Corp.
+plugins:
+  - jekyll-postcss
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-last-modified-at
+  - jekyll-feed
+  - jekyll-paginate
+
+postcss:
+  cache: false
+
+paginate: 9
+paginate_path: "/blogs/page-:num/"
+
+# Optional. The default date format, used if none is specified in the tag.
+last-modified-at:
+    date-format: '%d-%b-%y'
+
+include: ["node_modules/tailwindcss"]
+
+permalink: /:categories/:year-:month-:day/:title:output_ext

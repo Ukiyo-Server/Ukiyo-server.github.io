@@ -1,0 +1,158 @@
+<header class="z-30 w-full px-2 py-4 sm:px-4">
+
+    <div class="flex items-center justify-between lg:mx-8 sm:mx-4">
+        <a href="/" title="Ukiyo | Home" class="flex items-center space-x-1">
+            <img src="/assets/icons/logo-black.svg" alt="Ukiyo the Cat" srcset="" class="w-auto h-10 ">
+            <img src="/assets/icons/UkiyoBold.svg" alt="Ukiyo" class="w-auto h-6">
+            <span class="sr-only">Ukiyo</span>
+        </a>
+        <!-- Navbar Start -->
+        <div class="relative hidden space-x-1 md:inline-flex dark:text-white dark:bg-slate-800  "
+            x-data="{ one: false, two: false }">
+            <a href="/" class="rounded-full btn btn-sm dark:hover:bg-blue-700">Home</a>
+            <div class="relative">
+                <button
+                    class="flex items-center rounded-full btn btn-sm dark:hover:bg-blue-700 dark:text-white dark:bg-slate-800"
+                    @click="one = true">
+                    Library
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                        class="flex-none w-4 h-4 ml-1 -mr-1 transition duration-200 ease-out transform"
+                        :class="{ 'rotate-180': one }">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="absolute top-0 z-50 w-screen max-w-md p-2 mx-0 my-12 text-sm text-gray-800 transform bg-white rounded shadow lg:left-1/2 lg:-translate-x-1/2 dark:text-white dark:bg-slate-800 "
+                    x-show.transition.in.opacity.out.opacity="one" @click.away="one = false" x-cloak>
+                    <div class="grid grid-cols-2 gap-2 mb-2">
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                            <p class="font-semibold">Beginner Guide</p>
+                            MStart your Japanese journey with the basics.
+                        </a>
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                            <p class="font-semibold">Textbooks</p>
+                            Explore recommended textbooks for structured learning.
+                        </a>
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                            <p class="font-semibold">Course</p>
+                            Access online courses to boost your language skills.
+                        </a>
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                            <p class="font-semibold">Hiragana & Katakana</p>
+                            Master the Japanese scripts with our resources.
+                        </a>
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                            <p class="font-semibold">Softwares</p>
+                            Explore language learning software and tools.
+                        </a>
+                    </div>
+                    <a href="/library"
+                        class="flex items-center justify-center p-3 font-medium transition bg-gray-200 rounded text-primary hover:bg-gray-300">
+                        Check all resources
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" class="w-4 h-4 ml-1">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <button
+                    class="flex items-center rounded-full btn btn-sm dark:hover:bg-blue-700 dark:text-white dark:bg-slate-800"
+                    @click="two = true">
+                    Blogs
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                        class="flex-none w-4 h-4 ml-1 -mr-1 transition duration-200 ease-out transform"
+                        :class="{ 'rotate-180': two }">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="absolute top-0 z-50 w-screen max-w-md p-2 mx-0 my-12 text-sm text-gray-800 transform bg-white dark:text-white dark:bg-slate-800 rounded shadow lg:left-1/2 lg:-translate-x-1/2"
+                    x-show.transition.in.opacity.out.opacity="two" @click.away="two = false" x-cloak>
+                    <p class="pt-2 pl-3 mb-1 text-xs font-semibold tracking-wide text-gray-500 uppercase">Our
+                        popular
+                        Blogs</p>
+                    <div class="flex flex-col space-y-1 font-medium text-gray-800 dark:text-white dark:bg-slate-800">
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                            Comming soon </a>
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Coming
+                            Soon</a>
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">
+                            Coming soon </a>
+                        <a href="/blogs"
+                            class="flex items-center justify-center p-3 transition bg-gray-200 rounded text-primary hover:bg-gray-300">
+                            View all blog posts
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true" class="w-4 h-4 ml-1">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="/about-us/" class="rounded-full btn btn-sm dark:hover:bg-blue-700">About Us</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="https://discord.gg/ukiyo-fu-shi-937243464079400990"
+                class="rounded-full btn btn-sm btn-dark bg-blue-600 hover:bg-blue-700 border border-transparent">Join
+                now!</a>
+            <div class="inline-flex md:hidden" x-data="{ open: false }">
+                <button class="flex-none px-2 btn btn-white btn-sm " @click="open = true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                        class="w-5 h-5">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <span class="sr-only">Open Menu</span>
+                </button>
+                <div class="absolute top-0 left-0 right-0 z-50 flex flex-col p-2 m-2 space-y-1 bg-white rounded shadow dark:text-white dark:bg-slate-800"
+                    x-show.transition="open" @click.away="open = false" x-cloak>
+                    <button class="self-end flex-none px-2 btn btn-link btn-icon bg-slate-300" @click="open = false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                        <span class="sr-only">Close Menu</span>
+                    </button>
+                    <div class="grid grid-cols-2 gap-1">
+                        <a href="#"
+                            class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Pricing</a>
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Tools</a>
+                    </div>
+                    <p class="pt-2 pl-3 text-xs font-semibold tracking-wide text-gray-500 uppercase">Features</p>
+                    <div class="grid grid-cols-2 gap-1">
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Shared
+                            Inbox</a>
+                        <a href="#"
+                            class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Reporting</a>
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Knowledge
+                            Base</a>
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">Live
+                            Chat</a>
+                        <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-200 hover:text-primary">In-app
+                            Messaging</a>
+                    </div>
+                    <a href="#"
+                        class="flex items-center justify-center p-3 font-medium transition bg-gray-200 rounded text-primary hover:bg-gray-300">
+                        View all features
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" class="w-4 h-4 ml-1">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
