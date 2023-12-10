@@ -15,8 +15,14 @@ postcss:
 paginate: 9
 paginate_path: "/blogs/page-:num/"
 
-webmaster_verifications:
-  google: 
+social:
+  name: Ukiyo Server
+  links:
+    - https://www.facebook.com/UkiyoServer/
+    - https://www.instagram.com/ukiyoserver/
+    - https://github.com/Ukiyo-Server
+    - https://twitter.com/UkiyoServer
+    - https://discord.gg/ukiyo-fu-shi-937243464079400990
 
 # Optional. The default date format, used if none is specified in the tag.
 last-modified-at:
