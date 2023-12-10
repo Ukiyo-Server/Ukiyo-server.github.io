@@ -39,3 +39,5 @@ last-modified-at:
 include: ["node_modules/tailwindcss"]
 
 permalink: /:categories/:year-:month-:day/:title:output_ext
+
+plugins_dir: _plugins
