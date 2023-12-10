@@ -14,7 +14,15 @@ module.exports = {
     'node_modules/preline/dist/*.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          light: '#A1BCF6',
+          DEFAULT: '#2563EB',
+          dark: '#0B2E7C',
+        }
+      }
+    },
   },
   plugins: [require("kutty"), require('preline/plugin'), require('@tailwindcss/typography'),],
 }
