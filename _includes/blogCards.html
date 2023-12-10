@@ -16,21 +16,41 @@
         <a class="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4] dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
             href="{{ post.url }}">
             <div class="aspect-w-16 aspect-h-11">
-                <img class="w-full object-cover rounded-xl" src="{{ post.image.path }}" alt="{{ post.image.alt }}">
+                {% if post.image %}
+
+                <img class="w-full object-cover rounded-xl" src="{{ post.image.path }}" alt="{{ post.image.alt }}">{%
+                else %}
+                <img class="w-full object-cover rounded-xl"
+                    src="https://media.discordapp.net/attachments/938314763082018816/1183304160611938367/default_blog_banner.png"
+                    alt="Blog Cover Image">{% endif %}
             </div>
             <div class="my-6">
                 <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
                     {{ post.title }}
                 </h3>
                 <p class="mt-5 text-gray-600 dark:text-gray-400">
-                    {{ post.description }}
+                    {% if post.description %}
+                    {{ post.description | strip_html | truncatewords: 20 }}
+                    {% else %}
+                    {{ post.excerpt | strip_html | truncatewords: 20 }}
+                    {% endif %}
                 </p>
             </div>
             <div class="mt-auto flex justify-between items-center gap-x-3">
-                <div class="mt-auto flex items-center gap-x-3"><img class="w-8 h-8 rounded-full"
-                        src="{{ post.author_image }}" alt="Image Description">
+                <div class="mt-auto flex items-center gap-x-3">
+                    {% if post.author_image %}
+                    <img class="w-8 h-8 rounded-full" src="{{ post.author_image }}" alt="Image of {{ post.author}}.">
+                    {% else %}
+                    <img class="w-8 h-8 rounded-full" src="{{ '/assets/icons/user.png' | relative_url }}"
+                        alt="Image of {{ post.author}}.">
+                    {% endif %}
                     <div>
-                        <h5 class="text-sm text-gray-800 dark:text-gray-200">{{ post.author }}</h5>
+                        <h5 class="text-sm text-gray-800 dark:text-gray-200">
+                            {% if post.author %}
+                            {{ post.author }}
+                            {% else %}
+                            Ukiyo
+                            {% endif %}</h5>
                     </div>
                 </div>
                 <div>
