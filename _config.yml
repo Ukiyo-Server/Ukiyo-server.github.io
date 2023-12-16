@@ -1,7 +1,7 @@
 url: "https://ukiyoserver.live" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Ukiyo | 浮世" # the name of your site, e.g. ACME Corp.
-logo: "/assets/img/whiteCat.svg"
+logo: "/assets/icons/icon-512x512.png"
 plugins:
   - jekyll-postcss
   - jekyll-sitemap
@@ -19,7 +19,8 @@ paginate_path: "/blogs/page-:num/"
 
 twitter:
   username: Ukiyoserver
-  card: summary
+  card: summary_large_image
+  site: @UkiyoServer
 
 facebook:
   publisher: https://www.facebook.com/UkiyoServer
