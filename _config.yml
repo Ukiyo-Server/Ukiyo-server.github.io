@@ -20,7 +20,6 @@ paginate_path: "/blogs/page-:num/"
 twitter:
   username: Ukiyoserver
   card: summary_large_image
-  site: @UkiyoServer
 
 facebook:
   publisher: https://www.facebook.com/UkiyoServer
