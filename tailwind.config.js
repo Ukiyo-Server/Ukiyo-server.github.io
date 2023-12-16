@@ -7,19 +7,20 @@ module.exports = {
     './blog/*.html',
     './about/*.html',
     './_posts/*.md',
-    'team/*.html',
+    './team/*.html',
     './*.md',
+    './*js',
     './**/*.html',
     './assets/js/*.js',
-    'node_modules/preline/dist/*.js',
+    './node_modules/preline/dist/*.js',
   ],
   theme: {
     extend: {
       colors: {
         primary: {
-          light: '#A1BCF6',
+          light: '#2563EB',
           DEFAULT: '#2563EB',
-          dark: '#0B2E7C',
+          dark: '#2563EB',
         }
       }
     },
