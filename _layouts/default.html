@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ukiyo | Home</title>
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="./manifest.json" />
     {% seo %}
 </head>
 
 <body class="dark:text-white dark:bg-slate-800 flex items-center flex-col">
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
-    {% include cookieNotice.html %}
-    {% include scripts.html %}
-    <script>
+{% include header.html %}
 
-    </script>
+{{ content }}
+
+{% include footer.html %}
+{% include cookieNotice.html %}
+{% include scripts.html %}
 </body>
 
 </html>
