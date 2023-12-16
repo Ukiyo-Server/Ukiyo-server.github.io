@@ -1,4 +1,12 @@
 ---
+layout: post
+title: Just checking how we can embed videos and posts.
+description: By using _includes we can embed posts, videos from different websites.
+author: Idle Boy
+author_image: https://kutty.netlify.app/placeholder.jpg
+image:
+  path: https://ukiyoserver.live/assets/images/Banner-2_1.webp
+  alt: Twitter Logo
 youtubeId: dQw4w9WgXcQ
 vimeoId: 22439234
 twitchId: putYourIDHere
