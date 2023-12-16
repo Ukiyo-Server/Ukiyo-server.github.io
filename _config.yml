@@ -11,8 +11,16 @@ plugins:
   - jekyll-paginate
   - jekyll-pwa-plugin
 
+webmaster_verifications:
+  google: G-J3T9CBFLC3
+  # bing: 1234
+  # alexa: 1234
+  # yandex: 1234
+  # baidu: 1234
+  # facebook: 1234
+
 postcss:
-  cache: false
+  cache: true
 
 paginate: 9
 paginate_path: "/blogs/page-:num/"
