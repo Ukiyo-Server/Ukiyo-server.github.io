@@ -5,8 +5,8 @@ description: Learning a new language can be a thrilling and rewarding experience
 author: Idle Boy
 author_image: https://kutty.netlify.app/placeholder.jpg
 image:
-    path: https://kutty.netlify.app/brand/og.png
-    alt: fake banner
+  path: https://ukiyoserver.live/assets/images/Banner-2_1.webp
+  alt: Twitter Logo
 tags: Japanese N5 Starter-Guide
 category: Guides
 ---

@@ -2,6 +2,9 @@
 layout: post
 title: "Japanese Students Excel in Global Rankings and Government Plans Tuition-Free University for Large Families"
 date: 2023-12-10
+image:
+  path: https://ukiyoserver.live/assets/images/Banner-2_1.webp
+  alt: banner
 tags: education society
 ---
 
