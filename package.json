@@ -1,14 +1,25 @@
 {
   "name": "ukiyo-server.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "A website for Ukiyo Server.",
   "main": "script.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./main.css -o ./assets/css/main.css --watch",
-    "build": "npx tailwindcss -o ./assets/css/main.css --minify"
+    "build": "npx tailwindcss -o ./assets/css/main.css --minify",
+    "start": "bundle exec jekyll serve --livereload"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "ukiyo",
+    "server",
+    "website",
+    "Japanese",
+    "Discord",
+    "Discord Server",
+    "Japanese Discord Server",
+    "Discord Ukiyo",
+    "Ukiyo server"
+  ],
+  "author": "idleboy",
   "license": "ISC",
   "dependencies": {
     "kutty": "^0.6.0",
