@@ -5,7 +5,8 @@
   "scripts": {
     "build": "postcss ./main.css -o ./assets/css/main.css",
     "watch": "postcss ./main.css -o ./assets/css/main.css --watch",
-    "start": "bundle exec jekyll serve --livereload"
+    "start": "bundle exec jekyll serve --livereload",
+    "dev": "concurrently 'postcss ./main.css -o ./assets/css/main.css --watch'  'bundle exec jekyll serve --livereload'"
   },
   "keywords": [
     "ukiyo",
@@ -160,6 +161,7 @@
     "yaml": "^2.3.4"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10"
+    "@tailwindcss/typography": "^0.5.10",
+    "daisyui": "^4.6.0"
   }
 }
