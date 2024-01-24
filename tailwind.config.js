@@ -12,19 +12,23 @@ module.exports = {
     './*js',
     './**/*.html',
     './assets/js/*.js',
-    './node_modules/preline/dist/*.js',
+    './node_modules/preline/dist/*.js'
   ],
   theme: {
     extend: {
       colors: {
         primary: {
-          light: '#2563EB',
-          DEFAULT: '#2563EB',
-          dark: '#2563EB',
-        }
-      }
+          light: "#2563EB", // For lighter primary color
+          DEFAULT: "#2563EB", // Normal primary color
+          dark: "#2563EB", // Used for hover, active, etc.
+        },
+      },
     },
   },
-  plugins: [require("kutty"), require('preline/plugin'), require('@tailwindcss/typography'),],
+  plugins: [
+    require('@tailwindcss/custom-forms'),
+    require('preline/plugin'),
+    require("kutty"),
+    require('@tailwindcss/typography')],
 }
 
