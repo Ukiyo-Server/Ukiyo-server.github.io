@@ -7,7 +7,6 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="shortcut icon" href="/assets/icons/icon-96x96.png" type="image/x-icon">
-    <script src="/node_modules/preline/dist/preline.js"></script>
     {% seo %}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J3T9CBFLC3"></script>
@@ -51,17 +50,18 @@
                 {% endfor %}
             </div>
             {% endif %}
-            <a class="flex items-center" href="{{ page.author_url }}" target="_blank">
+            {% assign author = site.data.authors[page.author] %}
+            <a class="flex items-center" href="{{ author.discord }}" target="_blank">
                 <div class="avatar">
-                    {% if page.author_image %}
-                    <img src="{{ page.author_image }}" alt="Photo of {{ page.author }}" />
+                    {% if author.image %}
+                    <img src="{{ author.image }}" alt="Photo of {{ author.name }}" />
                     {% else %}
                     <img src="{{ '/assets/icons/user.png' | relative_url }}" alt="Photo of {{ page.author }}" />
                     {% endif %}
                 </div>
                 <div class="ml-2">
                     {% if page.author %}
-                    <p class="text-sm font-semibold">{{ page.author }}</p>
+                    <p class="text-sm font-semibold">{{ author.name }}</p>
                     {% else %}
                     <p class="text-sm font-semibold">Ukiyo</p>
                     {% endif %}
