@@ -71,6 +71,11 @@ module.exports = {
     require('preline/plugin'),
     require("kutty"),
     require('@tailwindcss/typography'),
-    require("daisyui")],
+    require("daisyui"),
+    require('@tailwindcss/aspect-ratio'),],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  
 }
 
