@@ -1,4 +1,14 @@
-Idle Boy:
-  picture: /img/benbalter.png
-  twitter: jekyllrb
-  github: itsidleboy
+Idle-Boy:
+  name: Idle Boy
+  image: https://cdn.discordapp.com/avatars/389799943121928192/a7305e010cafa0eede41479cfee269f4.webp
+  twitter: itsidleboy
+  github: https://github.com/itsidleboy
+  discord: https://discord.com/users/389799943121928192
+  website: https://itsidleboy.github.io/
+
+Ukiyo:
+  image: https://cdn.discordapp.com/icons/937243464079400990/11bfea9bfb79e4ba2c2c2fba58a53b77.webp
+  twitter: ukiyoserver
+  github: https://github.com/Ukiyo-Server
+  discord: https://discord.gg/a8fMJJmrsj
+  website: https://ukiyoserver.live/
