@@ -2,7 +2,7 @@
 layout: post
 title: Essential Tips for Beginners Learning Japanese
 description: Learning a new language can be a thrilling and rewarding experience. If you're starting your journey with Japanese, here are some essential tips to keep in mind.
-author: Idle Boy
+author: Idle-Boy
 author_image: https://kutty.netlify.app/placeholder.jpg
 image:
   path: https://ukiyoserver.live/assets/images/Banner-2_1.webp

@@ -2,7 +2,7 @@
 layout: post
 title: The Sapporo Snow Festival (さっぽろ雪まつり)
 description: Explore the magic of the Sapporo Snow Festival (さっぽろ雪まつり) in this immersive blog. Discover intricate ice and snow sculptures, cultural performances, and the enchanting illuminations. Learn Japanese phrases as you delve into the winter wonderland. Embrace the beauty of the festival and enhance your linguistic and cultural journey.
-author: Idle Boy
+author: Idle-Boy
 author_image: https://cdn.discordapp.com/avatars/389799943121928192/a7305e010cafa0eede41479cfee269f4.webp
 author_url: https://discord.com/users/389799943121928192
 image:

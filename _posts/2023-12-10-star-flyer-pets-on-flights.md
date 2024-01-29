@@ -2,10 +2,11 @@
 layout: post
 title: "Japan's Star Flyer Airline to Allow Pets on All Domestic Flights from January"
 date: 2023-12-10
+author: Idle-Boy
 image:
   path: https://ukiyoserver.live/assets/images/Banner-2_1.webp
   alt: Banner
-category: news
+category: News
 tags: travel news
 ---
 
