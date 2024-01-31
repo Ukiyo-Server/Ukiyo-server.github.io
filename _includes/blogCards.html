@@ -2,8 +2,8 @@
 <div class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-4 lg:mx-8">
     <!-- Title -->
     <div class="max-w-2xl text-center mx-auto mb-10 lg:mb-14">
-        <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Read our latest news</h2>
-        <p class="mt-1 text-gray-600 dark:text-gray-400">We've helped some great companies brand, design and get to
+        <h2 class="text-2xl font-bold md:text-4xl md:leading-tight">Read our latest news</h2>
+        <p class="mt-1">We've helped some great companies brand, design and get to
             market.</p>
     </div>
     <!-- End Title -->
@@ -20,19 +20,18 @@
 
                 <img class="w-full object-cover rounded-xl" src="{{ post.image.path }}" alt="{{ post.image.alt }}">{%
                 else %}
-                <img class="w-full object-cover rounded-xl"
-                    src="/assets/images/Banner-2_1.webp"
+                <img class="w-full object-cover rounded-xl" src="/assets/images/Banner-2_1.webp"
                     alt="Blog Cover Image">{% endif %}
             </div>
             <div class="my-6">
-                <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
+                <h3 class="text-xl font-semibold">
                     {{ post.title }}
                 </h3>
-                <p class="mt-5 text-gray-600 dark:text-gray-400">
+                <p class="mt-5">
                     {% if post.description %}
-                    {{ post.description | strip_html | truncatewords: 20 }}
+                    {{ post.description | strip_html | truncatewords: 40 }}
                     {% else %}
-                    {{ post.excerpt | strip_html | truncatewords: 20 }}
+                    {{ post.excerpt | strip_html | truncatewords: 40 }}
                     {% endif %}
                 </p>
             </div>
@@ -46,7 +45,7 @@
                         alt="Image of {{ post.author}}.">
                     {% endif %}
                     <div>
-                        <h5 class="text-sm text-gray-800 dark:text-gray-200">
+                        <h5 class="text-sm">
                             {% if post.author %}
                             {{ author.name }}
                             {% else %}
@@ -69,12 +68,12 @@
 
     <!-- Card -->
     <div class="text-center">
-        <div class="inline-block bg-white border shadow-sm rounded-full dark:bg-slate-900 dark:border-gray-800">
+        <div class="inline-block border shadow-sm rounded-full border-gray-200 dark:border-gray-700">
             <div class="py-3 px-4 flex items-center gap-x-2">
-                <p class="text-gray-600 dark:text-gray-400">
+                <p>
                     Want to read more?
                 </p>
-                <a class="inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium"
+                <a class="inline-flex items-center gap-x-1.5 text-primary decoration-2 hover:underline font-medium"
                     href="/blogs">
                     Go here
                     <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
