@@ -86,7 +86,7 @@ DEPENDENCIES
   jekyll-last-modified-at
   jekyll-paginate
   jekyll-postcss
-  jekyll-pwa-plugin (= 2.2.3)
+  jekyll-pwa-plugin
   jekyll-seo-tag
   jekyll-sitemap
   webrick
