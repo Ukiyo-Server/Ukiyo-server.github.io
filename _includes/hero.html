@@ -1,37 +1,46 @@
 <!-- Hero -->
-<div class="lg:mx-8 py-4 px-4 sm:px-8 m:mx-4 lg:px-8 mx-4 rounded-md bg-[#05a863]">
+<div class="lg:mx-8 py-4 px-4 sm:px-8 m:mx-4 lg:px-8 mx-4 rounded-md">
     <!-- Grid -->
     <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
         <div>
-            <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
-                <span class="text-blue-600">Ukiyo: </span>A Haven for Language Learners
+            <h1 class="text-3xl font-bold sm:text-4xl lg:text-6xl">
+                <span class="text-primary">Ukiyo: </span>A Haven for Language Learners
             </h1>
-            <p class="mt-3 text-lg text-gray-800 dark:text-white">Don't know where to start, how to learn or
+            <p class="mt-3 text-lg text\">Don't know where to start, how to learn or
                 can't find friends.</p>
 
             <!-- Buttons -->
             <div class="mt-7 grid gap-3 w-full sm:inline-flex">
-                <a class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
-                    href="https://discord.gg/ukiyo-fu-shi-937243464079400990?source=landingPage-herosection-cta">
-                    Join Now!
-                    <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                    </svg>
+                <a class="" href="https://discord.gg/ukiyo-fu-shi-937243464079400990?source=landingPage-herosection-cta"
+                    target="_blank">
+                    <button class="btn btn-primary">Join Now!
+                        <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg></button>
+
                 </a>
-                <a class="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border hover:border-gray-300 shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 dark:shadow-slate-700/[.7] dark:text-white dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800 text-black"
-                    href="/get-started">
-                    Get started
+                <a href="/get-started" target="_blank">
+                    <button class="btn btn-outline-primary w-fit">Get started</button>
                 </a>
             </div>
         </div>
         <!-- End Col -->
 
-        <div class="relative ml-4">
-            <img class="w-full rounded-md" src="/assets/images/hero-img.svg" alt="Image Description">
-            <div class="flex flex-row justify-end">
-                <a href="https://dribbble.com/manuel-corsi-manu" target="_blank" rel="noopener">Art by Manu</a>
-            </div>
+        <div class="flex justify-end">
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                type="module"></script>
+            <dotlottie-player
+                src="https://assets-v2.lottiefiles.com/a/6fe92f82-1153-11ee-94d9-f7df633f531f/frgwbPyg3L.lottie"
+                background="transparent" speed="1" style="width: auto; height: auto" direction="1" mode="normal" loop
+                autoplay></dotlottie-player>
+            <!-- <img class="w-full rounded-box xl:h-96" src="/assets/images/hero-img.svg" alt="Image Description">
+             -->
+            <!-- <div class="flex flex-row justify-end">
+                <a href="https://dribbble.com/manuel-corsi-manu?src=ukiyoserver.live" target="_blank" rel="noopener">Art
+                    by Manu</a>
+            </div> -->
         </div>
         <!-- End Col -->
     </div>
