@@ -19,14 +19,14 @@
     </script>
 </head>
 
-<body class="dark:text-white dark:bg-slate-800 flex items-center flex-col">
+<body>
     {% include header.html %}
     <!-- Card Blog -->
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <!-- Title -->
         <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-            <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">The Blogs</h2>
-            <p class="mt-1 text-gray-600 dark:text-gray-400"></p>
+            <h2 class="text-2xl font-bold md:text-4xl md:leading-tight">The Blogs</h2>
+            <p class="mt-1"></p>
         </div>
         <!-- End Title -->
 
@@ -46,10 +46,10 @@
                     {% endif %}
                 </div>
                 <div class="my-6">
-                    <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
+                    <h3 class="text-xl font-semibold">
                         {{ post.title }}
                     </h3>
-                    <p class="mt-5 text-gray-600 dark:text-gray-400">
+                    <p class="mt-5">
                         {% if post.description %}
                         {{ post.description }}
                         {% else %}
@@ -68,9 +68,9 @@
                         {% endif %}
                         <div>
                             {% if post.author %}
-                            <h5 class="text-sm text-gray-800 dark:text-gray-200">{{ author.name }}</h5>
+                            <h5 class="text-sm">{{ author.name }}</h5>
                             {% else %}
-                            <h5 class="text-sm text-gray-800 dark:text-gray-200">Ukiyo</h5>
+                            <h5 class="text-sm">Ukiyo</h5>
                             {% endif %}
                         </div>
                     </div>
@@ -90,7 +90,7 @@
             class="flex flex-col items-center justify-center mt-20 space-x-0 space-y-2 md:space-x-2 md:space-y-0 md:flex-row">
             {% if paginator.previous_page %}
             <a href="{{ paginator.previous_page_path }}"
-                class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-2 text-sm rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+                class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-2 text-sm rounded-lg focus:outline-none disabled:opacity-50 disabled:pointer-events-none">
                 <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
@@ -100,7 +100,7 @@
             </a>
             {% else %}
             <button type="button"
-                class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+                class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg focus:outline-none disabled:opacity-50 disabled:pointer-events-none">
                 <svg aria-hidden="true" class="hidden flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg"
                     width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round">
@@ -112,18 +112,16 @@
 
             <div class="flex items-center gap-x-1">
                 <span
-                    class="min-h-[38px] min-w-[38px] flex justify-center items-center border border-gray-200 text-gray-800 py-2 px-3 text-sm rounded-lg focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-white dark:focus:bg-white/10">{{
+                    class="min-h-[38px] min-w-[38px] flex justify-center items-center border py-2 px-3 text-sm rounded-lg focus:outline-none disabled:opacity-50 disabled:pointer-events-none">{{
                     paginator.page }}</span>
-                <span
-                    class="min-h-[38px] flex justify-center items-center text-gray-500 py-2 px-1.5 text-sm dark:text-gray-500">of</span>
-                <span
-                    class="min-h-[38px] flex justify-center items-center text-gray-500 py-2 px-1.5 text-sm dark:text-gray-500">{{
+                <span class="min-h-[38px] flex justify-center items-center px-1.5 text-sm">of</span>
+                <span class="min-h-[38px] flex justify-center items-center px-1.5 text-sm">{{
                     paginator.total_pages }}</span>
             </div>
 
             {% if paginator.next_page %}
             <a href="{{ paginator.next_page_path }}"
-                class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-2 text-sm rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+                class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-2 text-sm rounded-lg focus:outline-none disabled:opacity-50 disabled:pointer-events-none">
                 <span aria-hidden="true" class="hidden sm:block">Next</span>
                 <svg class="flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -133,7 +131,7 @@
             </a>
             {% else %}
             <button type="button"
-                class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+                class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-1.5 text-sm rounded-lg focus:outline-none disabled:opacity-50 disabled:pointer-events-none">
                 <span>Next</span>
                 <svg aria-hidden="true" class="hidden flex-shrink-0 w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg"
                     width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
