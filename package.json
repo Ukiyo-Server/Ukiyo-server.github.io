@@ -2,6 +2,7 @@
   "name": "ukiyo-server.github.io",
   "version": "0.1.3",
   "description": "A website for Ukiyo server.   **Please do not use this repo for personal use.**",
+  "main": "tailwind.config.js",
   "scripts": {
     "build": "postcss ./main.css -o ./assets/css/main.css",
     "watch": "postcss ./main.css -o ./assets/css/main.css --watch",
