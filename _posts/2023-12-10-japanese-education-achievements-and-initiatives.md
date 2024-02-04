@@ -7,6 +7,7 @@ image:
   path: https://ukiyoserver.live/assets/images/Banner-2_1.webp
   alt: banner
 tags: education society
+published: true
 ---
 
 ## Japanese Students Achieve High Rankings in Global Survey

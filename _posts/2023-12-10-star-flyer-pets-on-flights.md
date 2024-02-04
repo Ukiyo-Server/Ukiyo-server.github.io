@@ -8,6 +8,7 @@ image:
   alt: Banner
 category: News
 tags: travel news
+published: true
 ---
 
 Star Flyer, a Japanese airline, will allow small dogs and cats on all domestic flights starting January. This service, first introduced on select routes, is now expanded to attract more customers. Each passenger can bring one pet, with a flight limit of two pets. The service costs ¥50,000 ($350) per pet, placed in the last row next to their owner. Pets should not be fed during the flight, but water is permitted. This service will include more routes by 2024.
