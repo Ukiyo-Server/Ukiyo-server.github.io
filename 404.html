@@ -5,40 +5,234 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ukiyo</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/prod.css">
     <link rel="shortcut icon" href="/assets/icons/icon-96x96.png" type="image/x-icon">
-    {% seo %}
 </head>
 
-<body class="flex h-full dark:bg-black">
-    <div class="max-w-[50rem] flex flex-col mx-auto w-full h-full">
-        <header class="mb-auto flex justify-center z-50 w-full py-4">
-            <nav class="px-4 sm:px-6 lg:px-8" aria-label="Global">
-                <a class="flex items-center text-xl font-semibold sm:text-3xl dark:text-white" href="#"
-                    aria-label="Brand">
-                    <img src="/assets/icons/logo-black.svg" alt="Ukiyo the Cat" srcset="" class="w-auto h-12">
-                    Ukiyo</a>
-            </nav>
-        </header>
+<body>
+    <header class="z-30 w-full px-2 py-4 sm:px-4">
 
+        <div class="flex items-center justify-between lg:mx-8 sm:mx-4">
+            <a href="/" title="Ukiyo | Home" class="flex items-center space-x-1 text-xl font-semibold sm:text-3xl">
+                <img src="/assets/icons/logo-black.svg" alt="Ukiyo the Cat" class="w-auto h-10 rounded">
+                <span class="font-title">Ukiyo</span>
+            </a>
+            <!-- Navbar Start -->
+            <div class="relative hidden space-x-1 md:inline-flex" x-data="{ one: false, two: false }">
+                <a href="/"><button class="btn btn-ghost">Home</button></a>
+                <div class="relative">
+                    <button class="btn btn-ghost" @click="one = true">
+                        Library
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                            class="flex-none w-4 h-4 ml-1 -mr-1 transition duration-200 ease-out transform"
+                            :class="{ 'rotate-180': one }">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="absolute top-0 z-50 w-screen max-w-md p-2 mx-0 my-12 text-sm transform bg-base-100 rounded shadow lg:left-1/2 lg:-translate-x-1/2"
+                        x-show.transition.in.opacity.out.opacity="one" @click.away="one = false" x-cloak>
+                        <div class="grid grid-cols-2 gap-2 mb-2">
+                            <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-100 hover:text-primary">
+                                <p class="font-semibold">Beginner Guide</p>
+                                Start your Japanese journey with the basics.
+                            </a>
+                            <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-100 hover:text-primary">
+                                <p class="font-semibold">Textbooks</p>
+                                Explore recommended textbooks for structured learning.
+                            </a>
+                            <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-100 hover:text-primary">
+                                <p class="font-semibold">Course</p>
+                                Access online courses to boost your language skills.
+                            </a>
+                            <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-100 hover:text-primary">
+                                <p class="font-semibold">Hiragana & Katakana</p>
+                                Master the Japanese scripts with our resources.
+                            </a>
+                            <a href="#" class="px-3 py-2 transition rounded hover:bg-gray-100 hover:text-primary">
+                                <p class="font-semibold">Softwares</p>
+                                Explore language learning software and tools.
+                            </a>
+                        </div>
+                        <a href="/library" class="w-full"><button class="btn w-full">Check all resources
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true" class="w-4 h-4 ml-1">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg></button>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <button class="btn btn-ghost" @click="two = true">
+                        Blogs
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                            class="flex-none w-4 h-4 ml-1 -mr-1 transition duration-200 ease-out transform"
+                            :class="{ 'rotate-180': two }">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="absolute top-0 z-50 w-screen max-w-md p-2 mx-0 my-12 text-sm transform bg-base-100 rounded shadow-xl lg:left-1/2 lg:-translate-x-1/2"
+                        x-show.transition.in.opacity.out.opacity="two" @click.away="two = false" x-cloak>
+                        <p class="pt-2 pl-3 mb-1 text-xs font-semibold tracking-wide uppercase">Our
+                            popular
+                            Blogs</p>
+                        <div class="flex flex-col space-y-1 font-medium">
+                            {% for post in site.posts limit:4 %}
+                            <a href="{{ post.url }}"
+                                class="px-3 py-2 my-2 transition rounded hover:bg-gray-100 hover:text-primary">{{
+                                post.title
+                                }}</a>
+                            {% endfor %}
+                            <a href="/blogs" class="w-full">
+                                <button class="btn w-full">View all blog posts
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true" class="w-4 h-4 ml-1">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg></button>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="/about-us/"><button class="btn btn-ghost">About Us</button></a>
+
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="dropdown dropdown-end dropdown-hover">
+                    <div tabindex="0" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.098 19.902a3.75 3.75 0 0 0 5.304 0l6.401-6.402M6.75 21A3.75 3.75 0 0 1 3 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 0 0 3.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008Z" />
+                        </svg>
+                    </div>
+                    <div tabindex="0"
+                        class="h-56 dropdown-content z-[1] menu p-2 rounded-box bg-base-100 flex-nowrap overflow-x-auto shadow-xl"
+                        data-choose-theme="">
+                        <li><a data-set-theme="default">Default</a></li>
+                        <li><a data-set-theme="light">Light</a></li>
+                        <li><a data-set-theme="dark">Dark</a></li>
+                        <li><a data-set-theme="cupcake">Cupcake</a></li>
+                        <li><a data-set-theme="bumblebee">bumblebee</a></li>
+                        <li><a data-set-theme="emerald">emerald</a></li>
+                        <li><a data-set-theme="corporate">corporate</a></li>
+                        <li><a data-set-theme="synthwave">synthwave</a></li>
+                        <li><a data-set-theme="retro">retro</a></li>
+                        <li><a data-set-theme="cyberpunk">cyberpunk</a></li>
+                        <li><a data-set-theme="valentine">valentine</a></li>
+                        <li><a data-set-theme="halloween">halloween</a></li>
+                        <li><a data-set-theme="garden">garden</a></li>
+                        <li><a data-set-theme="forest">forest</a></li>
+                        <li><a data-set-theme="aqua">aqua</a></li>
+                        <li><a data-set-theme="lofi">lofi</a></li>
+                        <li><a data-set-theme="pastel">pastel</a></li>
+                        <li><a data-set-theme="fantasy">fantasy</a></li>
+                        <li><a data-set-theme="black">black</a></li>
+                        <li><a data-set-theme="luxury">luxury</a></li>
+                        <li><a data-set-theme="dracula">dracula</a></li>
+                        <li><a data-set-theme="cmyk">cmyk</a></li>
+                        <li><a data-set-theme="autumn">autumn</a></li>
+                        <li><a data-set-theme="business">Business</a></li>
+                        <li><a data-set-theme="Acid">Acid</a></li>
+                        <li><a data-set-theme="lemonade">Lemonade</a></li>
+                        <li><a data-set-theme="night">Night</a></li>
+                        <li><a data-set-theme="coffee">Coffee</a></li>
+                        <li><a data-set-theme="winter">Winter</a></li>
+                        <li><a data-set-theme="dim">Dim</a></li>
+                        <li><a data-set-theme="nord">Nord</a></li>
+                        <li><a data-set-theme="sunset">Sunset</a></li>
+                    </div>
+                </div>
+                <a href="https://discord.gg/ukiyo-fu-shi-937243464079400990" class="btn btn-sm btn-primary"
+                    target="_blank">Join
+                    now!</a>
+                <div class="inline-flex md:hidden" x-data="{ open: false }">
+                    <button class="btn btn-ghost" @click="open = true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                            class="w-5 h-5">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                        <span class="sr-only">Open Menu</span>
+                    </button>
+                    <div class="absolute top-0 left-0 right-0 z-50 flex flex-col p-2 m-2 space-y-1 rounded shadow bg-base-300"
+                        x-show.transition="open" @click.away="open = false" x-cloak>
+                        <div class="flex justify-end"><button class="btn btn-ghost w-fit" @click="open = false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                                <span class="sr-only">Close Menu</span>
+                            </button></div>
+                        <div class="grid grid-cols-2 gap-1">
+                            <button class="btn px-3 py-2 btn-ghost">
+                                <a href="/">Home</a>
+                            </button>
+                            <button class="btn px-3 py-2 btn-ghost">
+                                <a href="/blogs">Blogs</a>
+                            </button>
+
+                        </div>
+                        <p class="pt-2 pl-3 text-xs font-semibold tracking-wide uppercase">Library</p>
+                        <div class="grid grid-cols-2 gap-1">
+                            <button class="btn px-3 py-2 btn-ghost">
+                                <a href="#">Beginner
+                                    Guide</a>
+                            </button>
+                            <button class="btn px-3 py-2 btn-ghost">
+                                <a href="#">Textbooks</a>
+                            </button>
+                            <button class="btn px-3 py-2 btn-ghost"><a href="#">Course</a>
+                            </button>
+                            <button class="btn px-3 py-2 btn-ghost"><a href="#">Softwares</a></button>
+                            <button class="btn px-3 py-2 btn-ghost"><a href="#">Hiragana &
+                                    Katakana</a></button>
+                        </div>
+                        <a href="#" class="flex items-center justify-center p-3 font-medium transition rounded">
+                            <button class="btn btn-secondary w-full">View all features
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true" class="w-4 h-4 ml-1">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="flex flex-col mx-auto w-full h-full">
         <div class="text-center py-10 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
             <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
                 type="module"></script><dotlottie-player
-                src="https://lottie.host/9252a75d-a202-4863-b61d-8ce56cf27546/e4M9q9KtDW.json" background="transparent"
-                speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" loop
+                src="https://assets-v2.lottiefiles.com/a/6fe77d2c-1153-11ee-94d8-070d3395ea3e/HVuw3WT1gV.lottie"
+                background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" mode="normal" loop
                 autoplay></dotlottie-player>
-            <h1 class="block text-2xl font-bold text-white"></h1>
-            <p class="mt-3 text-gray-600 dark:text-gray-400">Oops, something went wrong.</p>
-            <p class="text-gray-600 dark:text-gray-400">Sorry, we couldn't find your page.</p>
+            <h1 class="block text-2xl font-bold"></h1>
+            <p class="mt-3">Oops, something went wrong.</p>
+            <p class="">Sorry, we couldn't find your page.</p>
             <div class="mt-5 flex flex-col justify-center items-center gap-2 sm:flex-row sm:gap-3">
-                <a class="w-full sm:w-auto py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                <a class="w-full sm:w-auto py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold"
                     href="/">
-                    <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="m15 18-6-6 6-6" />
-                    </svg>
-                    Go back
+                    <button class="btn btn-primary"><svg class="flex-shrink-0 w-4 h-4"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m15 18-6-6 6-6" />
+                        </svg>
+                        Go back</button>
+
                 </a>
                 <!-- <a class="w-full sm:w-auto py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-blue-600 hover:text-blue-800 disabled:opacity-50 disabled:pointer-events-none dark:text-blue-500 dark:hover:text-blue-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                     href="../examples.html">
@@ -51,13 +245,108 @@
                 </a> -->
             </div>
         </div>
-
-        <footer class="mt-auto text-center py-5">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <p class="text-sm text-gray-500">© All Rights Reserved. 2022.</p>
-            </div>
-        </footer>
     </div>
+    <!-- Footer -->
+    <footer class="w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+        <!-- Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 mb-10 mx-4">
+            <div class="col-span-full hidden lg:col-span-1 lg:block">
+                <a class="flex-none text-xl font-semibold" href="#" aria-label="Brand">Ukiyo</a>
+                <p class="mt-3 text-xs sm:text-sm">© 2023.</p>
+            </div>
+            <!-- End Col -->
+
+            <div>
+                <h4 class="text-xs font-semibold uppercase">Organisation</h4>
+
+                <div class="mt-3 grid space-y-3 text-sm">
+                    <p><a class="inline-flex gap-x-2" href="/about-us">About us</a></p>
+                    <p><a class="inline-flex gap-x-2" href="/blogs">Blogs</a></p>
+                    <p><a class="inline-flex gap-x-2" href="/team">Team</a>
+                        <!-- <span class="inline text-primary">— Coming
+                            Soon</span> -->
+                    </p>
+                    <p><a class="inline-flex gap-x-2 after:content-['_↗']"
+                            href="https://discord.gg/a8fMJJmrsj">Community</a></p>
+                </div>
+            </div>
+            <!-- End Col -->
+
+            <div>
+                <h4 class="text-xs font-semibold uppercase">Resources</h4>
+
+                <div class="mt-3 grid space-y-3 text-sm">
+                    <p><a class="inline-flex gap-x-2"
+                            href="https://discord.com/channels/937243464079400990/937315636848234527"
+                            target="_blank">Help &
+                            Support</a></p>
+                    <p><a class="inline-flex gap-x-2" href="#">eBook</a></p>
+                    <p><a class="inline-flex gap-x-2 after:content-['_↗']"
+                            href="https://stats.uptimerobot.com/V2bjW0YJ2w" target="_blank">Status</a></p>
+                </div>
+            </div>
+            <!-- End Col -->
+
+            <div>
+                <h4 class="text-xs font-semibold uppercase">Developers</h4>
+
+                <div class="mt-3 grid space-y-3 text-sm">
+                    <p><a class="inline-flex gap-x-2" href="https://stats.uptimerobot.com/V2bjW0YJ2w"
+                            target="_blank">Status</a>
+                    </p>
+                    <p><a class="inline-flex gap-x-2" href="https://github.com/Ukiyo-Server" target="_blank">GitHub</a>
+                    </p>
+                    <p><a class="inline-flex gap-x-2" href="/sitemap.xml" target="_blank">Sitemap</a></p>
+                </div>
+
+            </div>
+            <!-- End Col -->
+        </div>
+        <!-- End Grid -->
+
+        <div class="pt-5 mt-5">
+            <div class="sm:flex sm:justify-between sm:items-center">
+                <div class="flex items-center gap-x-3">
+                    <div class="space-x-4 text-sm flex justify-around">
+                        <a class="inline-flex gap-x-2" href="/terms-and-conditions/">Terms</a>
+                        <a class="inline-flex gap-x-2" href="/privacy-policy/">Privacy</a>
+                        <a class="inline-flex gap-x-2" href="/pri">Cookies Policy</a>
+                        <a class="inline-flex gap-x-2" href="https://stats.uptimerobot.com/V2bjW0YJ2w"
+                            target="_blank">Status</a>
+                    </div>
+                </div>
+
+                <!-- Social Brands -->
+                <div class="space-x-4 flex justify-center">
+                    <a class="inline-block" href="https://github.com/Ukiyo-Server" target="_blank">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                        <p class="sr-only">Github</p>
+                    </a>
+                </div>
+                <!-- End Social Brands -->
+            </div>
+            <!-- End Col -->
+        </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/preline.js"></script>
+    <!-- Theme Changer -->
+    <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+    <!-- All components in one -->
+    <script src="https://cdn.jsdelivr.net/npm/kutty@latest/dist/kutty.min.js"></script>
+    <!-- Single component -->
+    <!-- Include AlpineJS first -->
+    <script src="https://cdn.jsdelivr.net/npm/kutty@latest/dist/alpinejs.min.js"></script>
+    <!-- And then the single component -->
+    <script src="https://cdn.jsdelivr.net/npm/kutty@latest/dist/dropdown.min.js"></script>
+    <!-- End Scripts -->
 </body>
 
 </html>
