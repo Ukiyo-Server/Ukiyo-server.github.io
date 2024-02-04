@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/prod.css">
+    <link rel="shortcut icon" href="/assets/icons/icon-96x96.png" type="image/x-icon">
+    {% seo %}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J3T9CBFLC3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-J3T9CBFLC3');
+    </script>
+</head>
+
+<body>
+    {% include header.html %}
+    <div class="flex flex-row px-2 py-4 sm:px-4">
+        <div class="basis-1/4 px-4">
+            <div class="mx-8">
+                <h3 class="text-xl">Table of Content</h3>
+                <div class="">
+                    {% include toc.html html=content %}
+                </div>
+            </div>
+        </div>
+        <article class="px-4 mx-auto basis-1/2" itemid="#" itemscope itemtype="http://schema.org/BlogPosting">
+            <div class="w-full mx-auto mb-12 text-left">
+
+                {% if page.image %}
+                <img src="{{ page.image.path }}" class="object-cover w-full h-64 bg-center rounded-lg"
+                    alt="{{ page.image.alt }}" />
+                {% else %}
+                <img src="https://media.discordapp.net/attachments/938314763082018816/1183304160611938367/default_blog_banner.png"
+                    class="object-cover w-full h-64 bg-center rounded-lg">
+                {% endif %}
+                <p class="mt-6 mb-2 text-xs font-semibold tracking-wider uppercase text-base-100">{{ page.category }}
+                </p>
+                <h1 class="mb-3 text-3xl font-bold leading-tight md:text-4xl" itemprop="headline"
+                    title="{{ page.title }}">
+                    {{ page.title }}
+                </h1>{% if page.tags.size > 0 %}
+                <div class="flex mb-6 space-x-2">
+                    {% for tag in page.tags %}
+                    <a class="text-gray-900 bg-gray-100 badge hover:bg-gray-200 cursor-not-allowed pointer-events-none"
+                        href="/tags/{{ tag | slugify }}">{{ tag
+                        }}</a>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% assign author = site.data.authors[page.author] %}
+                <a class="flex items-center w-fit" href="{{ author.discord }}" target="_blank">
+                    <div class="avatar">
+                        {% if author.image %}
+                        <img src="{{ author.image }}" alt="Photo of {{ author.name }}" />
+                        {% else %}
+                        <img src="{{ '/assets/icons/user.png' | relative_url }}" alt="Photo of {{ page.author }}" />
+                        {% endif %}
+                    </div>
+                    <div class="ml-2">
+                        {% if page.author %}
+                        <p class="text-sm font-semibold">{{ author.name }}</p>
+                        {% else %}
+                        <p class="text-sm font-semibold">Ukiyo</p>
+                        {% endif %}
+                        <p class="text-sm">{{ page.date
+                            | date_to_string }}</p>
+                    </div>
+                </a>
+                <div class="w-full max-w-none mb-12 my-12 text-left prose dark:prose-invert">
+                    {% include anchor_headings.html html=content beforeHeading=true anchorBody='<svg
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 inline">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                    </svg>' %}
+
+                </div>
+            </div>
+
+
+        </article>
+        <div class="basis-1/4"></div>
+    </div>
+    {% include footer.html %}
+    {% include scripts.html %}
+
+</body>
+
+</html>
