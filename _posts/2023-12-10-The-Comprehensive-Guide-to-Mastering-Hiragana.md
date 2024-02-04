@@ -8,6 +8,7 @@ image:
   alt: fake banner
 tags: Japanese N5 Starter-Guide
 category: Guides
+published: true
 ---
 
 ## Introduction to Hiragana

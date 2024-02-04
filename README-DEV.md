@@ -1,18 +1,31 @@
-# how to run locally
+# how to install and run locally
 
-1. Run the Jekyll
+1. Install all Node packages
 
+```sh
+npm install --force
 ```
-bundle exec jekyll serve --livereload
+
+2. Now install gems
+
+```sh
+gem install bundler
 ```
 
-2. Now run tailwindcss
+then
 
+```sh
+bundle install
 ```
+
+3. Now you can run locally
+
+```sh
 npm run dev
 ```
 
-3. For PWA -
-```
+4. For PWA -
+
+```sh
 workbox generateSW workbox-config.js
 ```

@@ -13,7 +13,7 @@
         <!-- Card -->
         {% for post in site.posts limit:4 %}
         <!-- Card -->
-        <a class="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4] dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+        <a class="card bg-base-100 group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 p-5 dark:border-gray-700 dark:hover:border-transparent dark:hover:shadow-black/[.4] dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
             href="{{ post.url }}">
             <div class="aspect-w-16 aspect-h-9">
                 {% if post.image %}
@@ -68,7 +68,7 @@
 
     <!-- Card -->
     <div class="text-center">
-        <div class="inline-block border shadow-sm rounded-full border-gray-200 dark:border-gray-700">
+        <div class="inline-block border shadow-sm border-gray-200 dark:border-gray-700 card bg-base-100">
             <div class="py-3 px-4 flex items-center gap-x-2">
                 <p>
                     Want to read more?

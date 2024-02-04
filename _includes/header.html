@@ -1,10 +1,9 @@
 <header class="z-30 w-full px-2 py-4 sm:px-4">
 
     <div class="flex items-center justify-between lg:mx-8 sm:mx-4">
-        <a href="/" title="Ukiyo | Home" class="flex items-center space-x-1">
+        <a href="/" title="Ukiyo | Home" class="flex items-center space-x-1 text-xl font-semibold sm:text-3xl">
             <img src="/assets/icons/logo-black.svg" alt="Ukiyo the Cat" class="w-auto h-10 rounded">
-            <img src="/assets/icons/UkiyoBold.svg" alt="Ukiyo" class="w-auto h-6">
-            <span class="sr-only">Ukiyo</span>
+            <span class="font-title">Ukiyo</span>
         </a>
         <!-- Navbar Start -->
         <div class="relative hidden space-x-1 md:inline-flex" x-data="{ one: false, two: false }">
@@ -89,10 +88,19 @@
                 </div>
             </div>
             <a href="/about-us/"><button class="btn btn-ghost">About Us</button></a>
+
+        </div>
+        <div class="flex items-center space-x-4">
             <div class="dropdown dropdown-end dropdown-hover">
-                <div tabindex="0" class="btn btn-ghost">Theme</div>
-                <ul tabindex="0"
-                    class="dropdown-content z-[1] menu p-2 rounded-box w-52 bg-base-100 max-h-52 flex-nowrap overflow-x-auto shadow"
+                <div tabindex="0" class="btn btn-ghost">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.098 19.902a3.75 3.75 0 0 0 5.304 0l6.401-6.402M6.75 21A3.75 3.75 0 0 1 3 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 0 0 3.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008Z" />
+                    </svg>
+                </div>
+                <div tabindex="0"
+                    class="h-56 dropdown-content z-[1] menu p-2 rounded-box bg-base-100 flex-nowrap overflow-x-auto shadow-xl"
                     data-choose-theme="">
                     <li><a data-set-theme="default">Default</a></li>
                     <li><a data-set-theme="light">Light</a></li>
@@ -126,11 +134,8 @@
                     <li><a data-set-theme="dim">Dim</a></li>
                     <li><a data-set-theme="nord">Nord</a></li>
                     <li><a data-set-theme="sunset">Sunset</a></li>
-                </ul>
+                </div>
             </div>
-
-        </div>
-        <div class="flex items-center space-x-4">
             <a href="https://discord.gg/ukiyo-fu-shi-937243464079400990" class="btn btn-sm btn-primary"
                 target="_blank">Join
                 now!</a>
@@ -147,27 +152,25 @@
                 </button>
                 <div class="absolute top-0 left-0 right-0 z-50 flex flex-col p-2 m-2 space-y-1 rounded shadow bg-base-300"
                     x-show.transition="open" @click.away="open = false" x-cloak>
-                    <button class="btn btn-ghost" @click="open = false">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
-                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                        </svg>
-                        <span class="sr-only">Close Menu</span>
-                    </button>
+                    <div class="flex justify-end"><button class="btn btn-ghost w-fit" @click="open = false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                            <span class="sr-only">Close Menu</span>
+                        </button></div>
                     <div class="grid grid-cols-2 gap-1">
-                        <button>
-                            <a href="/"
-                                class="px-3 py-2 transition rounded hover:bg-gray-100 hover:text-primary">Home</a>
+                        <button class="btn px-3 py-2 btn-ghost">
+                            <a href="/">Home</a>
                         </button>
-                        <button>
-                            <a href="/blogs"
-                                class="px-3 py-2 transition rounded hover:bg-gray-100 hover:text-primary">Blogs</a>
+                        <button class="btn px-3 py-2 btn-ghost">
+                            <a href="/blogs">Blogs</a>
                         </button>
 
                     </div>
-                    <p class="pt-2 pl-3 text-xs font-semibold tracking-wide text-gray-500 uppercase">Library</p>
+                    <p class="pt-2 pl-3 text-xs font-semibold tracking-wide uppercase">Library</p>
                     <div class="grid grid-cols-2 gap-1">
                         <button class="btn px-3 py-2 btn-ghost">
                             <a href="#">Beginner
@@ -183,7 +186,7 @@
                                 Katakana</a></button>
                     </div>
                     <a href="#" class="flex items-center justify-center p-3 font-medium transition rounded">
-                        <button class="btn btn-secondary w-full">View all features
+                        <button class="btn btn-secondary w-full">Check all resources
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true" class="w-4 h-4 ml-1">
