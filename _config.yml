@@ -2,6 +2,10 @@ url: "https://ukiyoserver.live" # the base hostname & protocol for your site, e.
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Ukiyo | 浮世" # the name of your site, e.g. ACME Corp.
 logo: "/assets/icons/icon-512x512.png"
+repository: Ukiyo-Server/Ukiyo-server.github.io
+repo_info: "This site is open source. Feel free to contribute to it on GitHub!"
+description: "Ukiyo is a Discord server for Japanese and English learners. We have a friendly community and a variety of resources to help you learn Japanese or English."
+
 plugins:
   - jekyll-postcss
   - jekyll-sitemap
@@ -10,6 +14,17 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-pwa-plugin
+
+timezone: Asia/Calcutta # Set the time zone for site generation. 
+
+show_drafts: false # Process and render draft posts.
+
+future: false # Publish posts with a future date
+
+unpublished: false # Render posts that were marked as unpublished
+
+collections:
+  - staff_members
 
 webmaster_verifications:
   google: G-J3T9CBFLC3
@@ -64,3 +79,6 @@ pwa:
   precache_glob_ignores: # Optional
     - sw-register.js
     - "fonts/**/*"
+
+exclude: [CONTRIBUTING.md, README.md, Gemfile, Gemfile.lock, node_modules, package.json, package-lock.json, yarn.lock, .gitignore, .gitattributes, .editorconfig, .jekyll-metadata, .sass-cache, .vscode, .vs, .DS_Store, .env, .env.example, .env.sample, .env.production, .env.development, .env.test, CNAME, CODE_OF_CONDUCT.md, CONTRIBUTING.md, postcss.config.js, README-DEV.md, SECURITY.md, tailwind.config.js, LICENSE]
+keep_files: [404.html]
