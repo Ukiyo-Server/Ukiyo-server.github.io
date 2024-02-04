@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ukiyo | Home</title>
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/prod.css">
   <link rel="shortcut icon" href="/assets/icons/icon-96x96.png" type="image/x-icon">
   {% seo %}
   <!-- Google tag (gtag.js) -->
@@ -19,10 +19,18 @@
   </script>
 </head>
 
-<body class="dark:text-white dark:bg-slate-800 flex items-center flex-col">
+<body>
   {% include header.html %}
-
-  {% include team.html %}
+  <div class="card lg:card-side bg-base-100 shadow-xl">
+    <figure><img src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">New album is released!</h2>
+      <p>Click the button to listen on Spotiwhy app.</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-primary">Listen</button>
+      </div>
+    </div>
+  </div>
   {% include footer.html %}
   {% include cookieNotice.html %}
   {% include scripts.html %}
