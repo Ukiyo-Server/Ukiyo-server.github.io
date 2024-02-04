@@ -24,7 +24,15 @@ future: false # Publish posts with a future date
 unpublished: false # Render posts that were marked as unpublished
 
 collections:
-  - staff_members
+  library:
+    output: true
+    filter: "type:library"
+  staff_members:
+    output: true
+    filter: "type:staff"
+  guide:
+    output: true
+    filter: "type:guide"
 
 webmaster_verifications:
   google: G-J3T9CBFLC3
