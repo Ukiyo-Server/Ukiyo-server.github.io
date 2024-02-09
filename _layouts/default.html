@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth select-none">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ukiyo | Home</title>
+    <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/prod.css">
     <link rel="manifest" href="/manifest.json" />
     <link rel="shortcut icon" href="/assets/icons/icon-96x96.png" type="image/x-icon">
@@ -20,7 +20,7 @@
     </script>
 </head>
 
-<body>
+<body class="flex flex-col items-center">
     {% include header.html %}
     {{ content }}
     {% include footer.html %}

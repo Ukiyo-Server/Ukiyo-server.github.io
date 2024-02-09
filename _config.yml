@@ -33,6 +33,9 @@ collections:
   guide:
     output: true
     filter: "type:guide"
+  resource:
+    output: true
+    filter: "type:resource"
 
 webmaster_verifications:
   google: G-J3T9CBFLC3

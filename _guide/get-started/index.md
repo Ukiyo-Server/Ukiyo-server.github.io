@@ -1,119 +1,97 @@
 ---
 layout: post
 title: Get Started - Beginner's Guide to Learning Japanese
+description: A simple guide for beginners to learn Japanese with free resources.
+image:
+  path: https://ukiyoserver.live/assets/images/Banner-2_1.webp
+  alt: A banner with a cat image and Ukiyo
+author: Ukiyo
 ---
 
-## 1. Introduction to Japanese
+## Japanese, 日本語, にほんご, Nihongo
 
-- ### What is Japanese?
-  
-  Japanese (日本語,にほんご, Nihongo) is the national language of Japan and its people. Linguists believe it developed independently from other language families. According to [Wikipedia](https://en.wikipedia.org/wiki/Japanese_language), Japanese is the 9th largest language in the world by number of speakers with 128 million speakers. Though most of native speakers are Japanese living in Japan. Here are some Facts about Japanese:
-  1. Japanese is one of the most difficult language to learn.
-  2. There are between 40,000-50,000 kanji characters in all
-  3. Japanese has 3 different writing scripts.
-  4. Japanese has its own sign language
-  5. There are three varying levels of formality with corresponding grammar in Japanese
+Japanese is one of the hardest language as it includes 3 writing scripts, Hiragana, Katakana, Kanji, there are about
+over 50,000 kanjis, and japanese have three main politeness levels in spoken Japanese the plain form (kudaketa), the
+simple polite form (teinei) and the advanced polite form (keigo).
 
-## 2. Japanese Writing System
+At first it might not make any sense why there are 3 different writing scripts, politeness and bowing. But worry about
+it.
 
-- ### Hiragana (平仮名, ひらがな)
+## **Japanese Writing System**
 
-  - Used for native Japanese words and verb endings.
-  - Rounded and curvy characters.
-  - **Example:** こんにちは (Konnichiwa - Hello).
+### Hiragana
 
-- ### Katakana (片仮名、カタカナ)
+It is the first script that a native learns and we will too. It is rounded and curvy characters like こんにちは (Konnichiwa -
+hello). We will advise to learn hiragana first and it is the most basic script with all pronunciations.
 
-  - Used for foreign loanwords, names, and technical terms.
-  - Angular and straighter characters.
-  - **Example:** テレビ (terebi - TV).
+![hiragana chart](https://upload.wikimedia.org/wikipedia/commons/2/28/Table_hiragana.svg)
 
-- ### Romaji (rōmaji, ローマ字)
+### Katakana
 
-  - It is the name for the Roman alphabetisation of the Japanese language.
-  - It is mainly written by Christian missionaries in 1600s to spread Christianity.
-  - **Example:** Arigato (ありがと - Thanks)
+It is mostly used for foreign loanwords, names, and technical terms. It has angular and straighter characters like テレビ
+(terebi - TV). Once you are done with Hiragana you should start learning Katakana as Japanese as lot more English
+vocabulary thank you might think.
 
-- ### Kanji
+![katakana chart](https://upload.wikimedia.org/wikipedia/commons/0/0d/Table_katakana.svg)
 
-  - Kanji characters are logograms, representing words or ideas.
-  - Originally borrowed from Chinese, Kanji carries historical, cultural, and phonetic significance.
-  - **Example:** 日本人 (Nihonjin - Japanese person)
+### Kanji
 
-## 3. Pronunciation
+Kanji characters are logograms, which representing words or ideas. Like:
 
-- The Japanese sounds system consists of a total of 23 consonant sounds and 5 vowel sounds /a, e, i, o, u/.
-- Japanese is a language with pitch accent.
-- High and low pitches, are used to distinguish similarly spelled words with different pronunciations.
-- Some says there are 47 dialects but only approx 13 dialects are recognized.
+![kanji chart](https://cdn.discordapp.com/attachments/980863758983397497/1204117883937099796/56238c16d0c1d4a4.svg)
 
-## 4. Basic Grammar Concepts
+As we mentioned before there are more than 50,000 kanjis but don’t worry you dont have to learn all of them. You will
+have to learn about **2000 kanji** to become fluent in kanji. Once you have learned 400 - 500 kanjis the rest tend to
+follow smoothly.
 
-- **Sentence structure**
-  - Subject-Object-Verb (SOV) structure.
-  - Examples of simple sentence formations.
-- **Particles and their usage**
-  - Particles like は (wa), が (ga), で (de) for sentence structure.
-  - Example: これは本です (Kore wa hon desu - This is a book).
-- **Verb conjugation (present, past, future)**
-  - Basic verb forms - present, past, and future.
-  - Example: 食べる (taberu - to eat) becomes 食べます (tabemasu - will eat).
+> Why 3 writing scripts?
+>
+> Well know you know about all writings scripts you might still say why use 3 scripts. To put this in simple languages
+> here is a sentence in all 3 scripts:
+>
+> **Hiragana:** `ねこにこねこにこ、ねこなこなくなる。`
+>
+> **Romanized:** `Neko ni koneko ni ko, neko nakonakunaru.`
+>
+> **Meaning:** `A kitten smiles at another kitten, and the kitten stops crying.`
+>
+> **With kanjis:** `猫に子猫に子、猫鳴く鳴くなる`
+>
+> So with Kanji it is easy to read and write.
 
-## 5. Vocabulary Building
+## How to Start
 
-- **Everyday words and expressions**
-  - Common words for daily communication.
-  - Example: こんにちは (Konnichiwa - Hello).
-- **Numbers, time, and dates**
-  - Counting, telling time, and mentioning dates.
-  - Example: 三つ (mittsu - three), 午後 (gogo - PM).
-- **Common nouns and adjectives**
-  - Useful nouns and describing words.
-  - Example: 大きい (ookii - big).
+Now we know all Japanese writing system but the question arises where to start from?
 
-## 6. Useful Language Learning Resources
+So, if you want you can self study or enroll in a Japanese language school. Both has its own benefits. Learning in a
+language school will offer a structured curriculum and Japanese learning environment, which can greatly enhance learning
+experience. On the other hand, self-studying allows for flexibility in terms of pace and schedule, making it a viable
+option for those with time or location constraints.
 
-- **Recommended textbooks**
-  - Genki, Minna no Nihongo for structured learning.
-- **Online courses and apps**
-  - Duolingo, Rosetta Stone, and language learning apps.
-- **Language exchange platforms**
-  - Connect with native speakers for practice.
+Well if you are going to self study then you need some resources to get started. We know there are too much resources &
+guides on internet that makes it hard to decide what to choose. But worry not we have already select best resources for
+you:
 
-## 7. Practice and Immersion Tips
+1. First we need to start with Hiragana, here are some resource:
+   - [Hiragana Chat with Audio](/resource/hiragana)
+   - [Hiragana Workbooks](http://japanese-lesson.com/resources/pdf/characters/hiragana_writing_practice_sheets.pdf)
+   - [Hiragana Vocabs](/library/)
+   > Now that you know from where to learn hiragana while learning it make sure to start learning some basic vocabularies from here and some basic sentences from here.
 
-- **Daily practice routines**
-  - Consistent practice with small goals.
-- **Watching Japanese media (anime, dramas)**
-  - Exposure to natural language and culture.
-- **Language exchange and conversation partners**
-  - Practice speaking with native speakers.
+2. After you have learned Hiragana and some vocab now it’s time to learn Katakana from here:
+   - [Katakana Chat with Audio](/resource/katakana)
+   - [Katakana Workbooks](http://japanese-lesson.com/resources/pdf/characters/katakana_writing_practice_sheets.pdf)
+   - [Katakana Vocabs](/library/)
 
-## 8. Cultural Insights
+3. Now let’s start with some grammar for which you can choose a book. We suggest [Minna no Nihongo 1](https://drive.google.com/file/d/1xDVvMkHZPeuhNBfYMkUm2uvRwy248gza/view) and [Genki 1](https://drive.google.com/file/d/0B7RbJJM_m3GDcnFSQmFyLWJUZnc/view). Both are
+beginner friendly and very popular.
 
-- **Understanding Japanese customs**
-  - Basic etiquette, bowing, and gift-giving.
-- **Basic etiquette and manners**
-  - Respect for elders and social norms.
-- **Cultural nuances in language use**
-  - How culture affects language expression.
+4. Now that you know you can make basic sentences you can with Kanji depending on your chosen book. You can use apps
+like [Anki](https://apps.ankiweb.net?src=ukiyoserver-guide) for practicing Kanjis.
 
-## 9. Challenges and Solutions
+5. At Last, now you need to just follow the book and start practicing speaking Japanese for which you can join a Discord
+Community or use apps like HelloTalk.
 
-- **Common difficulties for learners**
-  - Kanji memorization, pronunciation challenges.
-- **Tips for overcoming challenges**
-  - Consistency, patience, and seeking help.
-- **Staying motivated**
-  - Set achievable goals, celebrate progress.
+## For people who knows basics
 
-## 10. Next Steps in Learning Japanese
-
-    - **Intermediate learning goals**
-      - Expanding vocabulary, mastering grammar.
-    - **Advanced study options**
-      - Advanced textbooks, immersion programs.
-    - **Planning for continued progress**
-      - Create a study plan, explore advanced content.
-
-Feel free to use this as a starting point and expand each section as needed. If you need more information or details, we can work on that together.
+Now that you know how to study and have some knowedege you can choose what you want to learn next and required resources for that. But do you know the best place to search for the all resources at one place. If you don't then [here](1) you can find all resource you need.
