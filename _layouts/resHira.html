@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth select-none">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="/assets/css/prod.css">
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="shortcut icon" href="/assets/icons/icon-96x96.png" type="image/x-icon">
+        {% seo %}
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J3T9CBFLC3"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+
+                gtag('config', 'G-J3T9CBFLC3');
+        </script>
+</head>
+
+<body class="flex flex-col items-center">
+        {% include header.html %}
+
+        <!-- <button id="muteButton" onclick="toggleMute()" class="btn fixed bottom-[15px] right-[15px]">Mute</button> -->
+        <label class="swap fixed bottom-[15px] right-[15px]">
+
+                <!-- this hidden checkbox controls the state -->
+                <input type="checkbox" onclick="toggleMute()" id="muteButton" />
+
+                <!-- volume on icon -->
+                <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                        viewBox="0 0 24 24">
+                        <path
+                                d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
+                </svg>
+
+                <!-- volume off icon -->
+                <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                        viewBox="0 0 24 24">
+                        <path
+                                d="M3,9H7L12,4V20L7,15H3V9M16.59,12L14,9.41L15.41,8L18,10.59L20.59,8L22,9.41L19.41,12L22,14.59L20.59,16L18,13.41L15.41,16L14,14.59L16.59,12Z" />
+                </svg>
+
+        </label>
+        <h1 class="text-3xl font-bold sm:text-4xl lg:text-5xl my-6">{{ page.title }}</h1>
+        <p class="text-lg sm:text-xl lg:text-2xl my-6">{{ page.description }}</p>
+        <div class="prose my-6">
+                <h2 id="gojūon-zu-五十音図">
+
+                        <a href="#gojūon-zu-五十音図"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                        class="w-6 h-6 inline">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244">
+                                        </path>
+                                </svg></a> Gojūon-zu 【五十音図】
+
+                </h2>
+
+                <p>In Japanese, syllables are organized in the form of a table (5 x 10). This table is called gojūon-zu
+                        (literally
+                        means table of 50 sounds).</p>
+
+                <p>To describe these sounds, Hiragana and Katakana alphabets are used.</p>
+
+                <p>Letters い, う and え appear more than once in the table. These 5 duplicates (gray colored) are usually
+                        skipped
+                        or
+                        ignored.</p>
+
+                <p>Another syllable ん is included. It doesn’t belong to any row or column.</p>
+
+                <p>In total, 46 letters (45+1) are counted as gojūon (50 sounds).</p>
+        </div>
+        <div>
+                <table class="table">
+                        <thead>
+                                <tr class="text-center">
+                                        <th colspan="6" class="text-lg sm:text-xl lg:text-2xl my-6">Gojūon 【五十音】</th>
+                                </tr>
+                                <tr class="text-center">
+                                        <th>#</th>
+                                        <th>a</th>
+                                        <th>i</th>
+                                        <th>u</th>
+                                        <th>e</th>
+                                        <th>o</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                                <tr class="text-center">
+                                        <td>a</td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('a')">あ</button><span
+                                                        class="sr-only">あ</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('i')">い</button><span
+                                                        class="sr-only">い</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('u')">う</button><span
+                                                        class="sr-only">う</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('e')">え</button><span
+                                                        class="sr-only">え</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('o')">お</button><span
+                                                        class="sr-only">お</span>
+                                        </td>
+                                </tr>
+                                <tr class="text-center">
+                                        <td>ka</td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('ka')">か</button><span
+                                                        class="sr-only">か</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('ki')">き</button><span
+                                                        class="sr-only">き</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('ku')">く</button><span
+                                                        class="sr-only">く</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('ke')">け</button><span
+                                                        class="sr-only">け</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('ko')">こ</button><span
+                                                        class="sr-only">こ</span>
+                                        </td>
+                                </tr>
+                                <tr class="text-center">
+                                        <td>sa</td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('sa')">さ</button><span
+                                                        class="sr-only">さ</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('shi')">し</button><span
+                                                        class="sr-only">し</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('su')">す</button><span
+                                                        class="sr-only">す</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('se')">せ</button><span
+                                                        class="sr-only">せ</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('so')">そ</button><span
+                                                        class="sr-only">そ</span>
+                                        </td>
+                                </tr>
+                                <tr class="text-center">
+                                        <td>ta</td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('ta')">た</button><span
+                                                        class="sr-only">た</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('chi')">ち</button><span
+                                                        class="sr-only">ち</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('tsu')">つ</button><span
+                                                        class="sr-only">つ</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('te')">て</button><span
+                                                        class="sr-only">て</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('to')">と</button><span
+                                                        class="sr-only">と</span>
+                                        </td>
+                                </tr>
+                                <tr class="text-center">
+                                        <td>na</td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('na')">な</button><span
+                                                        class="sr-only">な</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('ni')">に</button><span
+                                                        class="sr-only">に</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('nu')">ぬ</button><span
+                                                        class="sr-only">ぬ</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('ne')">ね</button><span
+                                                        class="sr-only">ね</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('no')">の</button><span
+                                                        class="sr-only">の</span>
+                                        </td>
+                                </tr>
+                                <tr class="text-center">
+                                        <td>ha</td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('ha')">は</button><span
+                                                        class="sr-only">は</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('hi')">ひ</button><span
+                                                        class="sr-only">ひ</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('fu')">ふ</button><span
+                                                        class="sr-only">ふ</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('he')">へ</button><span
+                                                        class="sr-only">へ</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('ho')">ほ</button><span
+                                                        class="sr-only">ほ</span>
+                                        </td>
+                                </tr>
+                                <tr class="text-center">
+                                        <td>ma</td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('ma')">ま</button><span
+                                                        class="sr-only">ま</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('mi')">み</button><span
+                                                        class="sr-only">み</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('mu')">む</button><span
+                                                        class="sr-only">む</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('me')">め</button><span
+                                                        class="sr-only">め</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('mo')">も</button><span
+                                                        class="sr-only">も</span>
+                                        </td>
+                                </tr>
+                                <tr class="text-center"></tr>
+                                <tr class="text-center">
+                                        <td>ya</td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('ya')">や</button><span
+                                                        class="sr-only">や</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full" disabled="disabled"></button></td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('yu')">ゆ</button><span
+                                                        class="sr-only">ゆ</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full" disabled="disabled"></button></td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('yo')">よ</button><span
+                                                        class="sr-only">よ</span>
+                                        </td>
+                                </tr>
+                                <tr class="text-center">
+                                        <td>r</td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('ra')">ら</button><span
+                                                        class="sr-only">ら</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('ri')">り</button><span
+                                                        class="sr-only">り</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('ru')">る</button><span
+                                                        class="sr-only">る</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('re')">れ</button><span
+                                                        class="sr-only">れ</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('ro')">ろ</button><span
+                                                        class="sr-only">ろ</span>
+                                        </td>
+                                </tr>
+                                <tr class="text-center">
+                                        <td>w</td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('wa')">わ</button><span
+                                                        class="sr-only">わ</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost no-animation w-full">ゐ</button><span
+                                                        class="sr-only">ゐ</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full" disabled="disabled"></button><span
+                                                        class="sr-only"></span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full no-animation">ゑ</button><span
+                                                        class="sr-only">ゑ</span>
+                                        </td>
+                                        <td><button class="btn btn-ghost w-full"
+                                                        onclick="PlaySound('wo')">を</button><span
+                                                        class="sr-only">を</span>
+                                        </td>
+                                </tr>
+                                <tr class="text-center">
+                                        <td>n</td>
+                                        <td colspan="5"><button class="btn btn-ghost"
+                                                        onclick="PlaySound('n')">ん</button><span
+                                                        class="sr-only">ん</span>
+                                        </td>
+                        </tbody>
+                </table>
+                <div class="prose my-6">
+                        <h2 id="dakuon-濁音">
+
+                                <a href="#dakuon-濁音"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                class="w-6 h-6 inline">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244">
+                                                </path>
+                                        </svg></a> Dakuon 【濁音】
+
+                        </h2>
+
+                        <p>Dakuon literally means turbid or murky sound. It is the voiced sound of か [ka], さ [sa], た
+                                [ta] and は
+                                [ha]-row syllables.</p>
+
+                        <p>Dakuon is indicated with two small dots.</p>
+                        <p>Pronunciation of じ and ぢ, ず and づ are the same.</p>
+
+                        <h2 id="handakuon-半濁音">
+
+                                <a href="#handakuon-半濁音"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                class="w-6 h-6 inline">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244">
+                                                </path>
+                                        </svg></a> Handakuon 【半濁音】
+
+                        </h2>
+
+                        <p>Handakuon literally means half-turbid or half-murky sound.</p>
+
+                        <p>Handakuon is indicated with a small circle.</p>
+                </div>
+                <table class="table my-6">
+                        <thead>
+                                <tr class="text-center">
+                                        <th colspan="6" class="text-lg sm:text-xl lg:text-2xl my-6">Dakuon 【濁音】with
+                                                Handakuon 【半濁音】</th>
+                                </tr>
+                        </thead>
+                        <tr class="text-center">
+                                <td>ga</td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('ga')">が</button><span
+                                                class="sr-only">が</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('gi')">ぎ</button><span
+                                                class="sr-only">ぎ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('gu')">ぐ</button><span
+                                                class="sr-only">ぐ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('ge')">げ</button><span
+                                                class="sr-only">げ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('go')">ご</button><span
+                                                class="sr-only">ご</span>
+                                </td>
+                        </tr>
+                        <tr class="text-center">
+                                <td>za</td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('za')">ざ</button><span
+                                                class="sr-only">ざ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('ji')">じ</button><span
+                                                class="sr-only">じ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('zu')">ず</button><span
+                                                class="sr-only">ず</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('ze')">ぜ</button><span
+                                                class="sr-only">ぜ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('zo')">ぞ</button><span
+                                                class="sr-only">ぞ</span>
+                                </td>
+                        </tr>
+                        <tr class="text-center">
+                                <td>da</td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('da')">だ</button><span
+                                                class="sr-only">だ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('ji')">ぢ</button><span
+                                                class="sr-only">ぢ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('zu')">づ</button><span
+                                                class="sr-only">づ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('de')">で</button><span
+                                                class="sr-only">で</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('do')">ど</button><span
+                                                class="sr-only">ど</span>
+                                </td>
+                        </tr>
+                        <tr class="text-center">
+                                <td>ba</td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('ba')">ば</button><span
+                                                class="sr-only">ば</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('bi')">び</button><span
+                                                class="sr-only">び</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('bu')">ぶ</button><span
+                                                class="sr-only">ぶ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('be')">べ</button><span
+                                                class="sr-only">べ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('bo')">ぼ</button><span
+                                                class="sr-only">ぼ</span>
+                                </td>
+                        </tr>
+                        <tr class="text-center">
+                                <td>pa</td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('pa')">ぱ</button><span
+                                                class="sr-only">ぱ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('pi')">ぴ</button><span
+                                                class="sr-only">ぴ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('pu')">ぷ</button><span
+                                                class="sr-only">ぷ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('pe')">ぺ</button><span
+                                                class="sr-only">ぺ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('po')">ぽ</button><span
+                                                class="sr-only">ぽ</span>
+                                </td>
+                        </tr>
+                </table>
+                <div class="prose my-6">
+                        <h2 id="yōon-拗音">
+
+                                <a href="#yōon-拗音"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                class="w-6 h-6 inline">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244">
+                                                </path>
+                                        </svg></a> Yōon 【拗音】
+
+                        </h2>
+
+                        <p>Yōon is a combination of the consonant of i-column syllables and ya, yu or yo. For example, k
+                                + ya =
+                                kya.
+                        </p>
+
+                        <p>Yōon is described by i-column letters plus small や, ゆ or よ. For example, き + ゃ = きゃ [kya].
+                        </p>
+
+                        <p>Pronunciation of じゃ, じゅ, じょ and ぢゃ, ぢゅ, ぢょ are the same.</p>
+                </div>
+
+                <table class="table my-6">
+                        <thead>
+                                <tr class="text-center">
+                                        <th colspan="4" class="text-lg sm:text-xl lg:text-2xl my-6">Yōon 【拗音】with
+                                                Handakuon 【半濁音】</th>
+                                </tr>
+                                <tr class="text-center">
+                                        <th>#</th>
+                                        <th>ya</th>
+                                        <th>yu</th>
+                                        <th>yo</th>
+                                </tr>
+                        </thead>
+                        <tr class="text-center">
+                                <td>ky</td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('kya')">きゃ</button><span
+                                                class="sr-only">きゃ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('kyu')">きゅ</button><span
+                                                class="sr-only">きゅ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('kyo')">きょ</button><span
+                                                class="sr-only">きょ</span>
+                                </td>
+                        </tr>
+                        <tr class="text-center">
+                                <td>sh</td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('sha')">しゃ</button><span
+                                                class="sr-only">しゃ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('shu')">しゅ</button><span
+                                                class="sr-only">しゅ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('sho')">しょ</button><span
+                                                class="sr-only">しょ</span>
+                                </td>
+                        </tr>
+                        <tr class="text-center">
+                                <td>ch</td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('cha')">ちゃ</button><span
+                                                class="sr-only">ちゃ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('chu')">ちゅ</button><span
+                                                class="sr-only">ちゅ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('cho')">ちょ</button><span
+                                                class="sr-only">ちょ</span>
+                                </td>
+                        </tr>
+                        <tr class="text-center">
+                                <td>ny</td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('nya')">にゃ</button><span
+                                                class="sr-only">にゃ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('nyu')">にゅ</button><span
+                                                class="sr-only">にゅ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('nyo')">にょ</button><span
+                                                class="sr-only">にょ</span>
+                                </td>
+                        </tr>
+                        <tr class="text-center">
+                                <td>hy</td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('hya')">ひゃ</button><span
+                                                class="sr-only">ひゃ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('hyu')">ひゅ</button><span
+                                                class="sr-only">ひゅ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('hyo')">ひょ</button><span
+                                                class="sr-only">ひょ</span>
+                                </td>
+                        </tr>
+                        <tr class="text-center">
+                                <td>my</td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('mya')">みゃ</button><span
+                                                class="sr-only">みゃ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('myu')">みゅ</button><span
+                                                class="sr-only">みゅ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('myo')">みょ</button><span
+                                                class="sr-only">みょ</span>
+                                </td>
+                        </tr>
+                        <tr class="text-center">
+                                <td>ry</td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('rya')">りゃ</button><span
+                                                class="sr-only">りゃ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('ryu')">りゅ</button><span
+                                                class="sr-only">りゅ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('ryo')">りょ</button><span
+                                                class="sr-only">りょ</span>
+                                </td>
+                        </tr>
+                        <tr class="text-center">
+                                <td>gy</td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('gya')">ぎゃ</button><span
+                                                class="sr-only">ぎゃ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('gyu')">ぎゅ</button><span
+                                                class="sr-only">ぎゅ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('gyo')">ぎょ</button><span
+                                                class="sr-only">ぎょ</span>
+                                </td>
+                        </tr>
+                        <tr class="text-center">
+                                <td>ja</td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('ja')">じゃ</button><span
+                                                class="sr-only">じゃ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('ju')">じゅ</button><span
+                                                class="sr-only">じゅ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('jo')">じょ</button><span
+                                                class="sr-only">じょ</span>
+                                </td>
+                        </tr>
+                        <tr class="text-center">
+                                <td>by</td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('bya')">びゃ</button><span
+                                                class="sr-only">びゃ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('byu')">びゅ</button><span
+                                                class="sr-only">びゅ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('byo')">びょ</button><span
+                                                class="sr-only">びょ</span>
+                                </td>
+                        </tr>
+                        <tr class="text-center">
+                                <td>py</td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('pya')">ぴゃ</button><span
+                                                class="sr-only">ぴゃ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('pyu')">ぴゅ</button><span
+                                                class="sr-only">ぴゅ</span>
+                                </td>
+                                <td><button class="btn btn-ghost w-full" onclick="PlaySound('pyo')">ぴょ</button><span
+                                                class="sr-only">ぴょ</span>
+                                </td>
+                        </tr>
+                </table>
+
+        </div>
+
+
+        <dialog id="hiraganaModal" class="modal">
+                <div class="modal-box flex flex-col items-center">
+                        <!-- <h3 class="font-bold text-lg">Hello!</h3> -->
+                        <!-- <p class="py-4">Press ESC key or click outside to close</p> -->
+                        <img id="modalImage" alt="Stroke order of the Hiragana">
+                        <div class="divider"></div>
+
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                </form>
+        </dialog>
+        {% include footer.html %}
+        {% include cookieNotice.html %}
+        {% include scripts.html %}
+        <script src="./index.js"></script>
+</body>
+
+</html>

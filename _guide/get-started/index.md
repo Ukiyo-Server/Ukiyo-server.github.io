@@ -45,31 +45,19 @@ have to learn about **2000 kanji** to become fluent in kanji. Once you have le
 follow smoothly.
 
 > Why 3 writing scripts?
-
-Well know you know about all writings scripts you might still say why use 3 scripts. To put this in simple languages
-here is a sentence in all 3 scripts:
-
-```txt
-Hiragana: ねこにこねこにこ、ねこなこなくなる。
-```
-
-```txt
-Romanized: Neko ni koneko ni ko, neko nakonakunaru.
-```
-
-```txt
-Can you read it and guess what does it mean?
-```
-
-```txt
-Meaning: A kitten smiles at another kitten, and the kitten stops crying.
-```
-
-```txt
-With kanjis it makes it easy to read like:
-
-猫に子猫に子、猫鳴く鳴くなる。
-```
+>
+> Well know you know about all writings scripts you might still say why use 3 scripts. To put this in simple languages
+> here is a sentence in all 3 scripts:
+>
+> **Hiragana:** `ねこにこねこにこ、ねこなこなくなる。`
+>
+> **Romanized:** `Neko ni koneko ni ko, neko nakonakunaru.`
+>
+> **Meaning:** `A kitten smiles at another kitten, and the kitten stops crying.`
+>
+> **With kanjis:** `猫に子猫に子、猫鳴く鳴くなる`
+>
+> So with Kanji it is easy to read and write.
 
 ## How to Start
 
@@ -85,20 +73,25 @@ guides on internet that makes it hard to decide what to choose. But worry not we
 you:
 
 1. First we need to start with Hiragana, here are some resource:
-   - [Hiragana Chat with Audio]()
-   - [Workbooks]()
+   - [Hiragana Chat with Audio](/resource/hiragana)
+   - [Hiragana Workbooks](http://japanese-lesson.com/resources/pdf/characters/hiragana_writing_practice_sheets.pdf)
+   - [Hiragana Vocabs](/library/)
    > Now that you know from where to learn hiragana while learning it make sure to start learning some basic vocabularies from here and some basic sentences from here.
 
 2. After you have learned Hiragana and some vocab now it’s time to learn Katakana from here:
-   - [Katakana Chat with Audio]()
-   - [Workbooks]()
-   - [Katakana Vocabs]()
+   - [Katakana Chat with Audio](/resource/katakana)
+   - [Katakana Workbooks](http://japanese-lesson.com/resources/pdf/characters/katakana_writing_practice_sheets.pdf)
+   - [Katakana Vocabs](/library/)
 
-3. Now let’s start with some grammar for which you can choose a book. We suggest Minna no [Nihongo]() and [Genki 1](). Both are
+3. Now let’s start with some grammar for which you can choose a book. We suggest [Minna no Nihongo 1](https://drive.google.com/file/d/1xDVvMkHZPeuhNBfYMkUm2uvRwy248gza/view) and [Genki 1](https://drive.google.com/file/d/0B7RbJJM_m3GDcnFSQmFyLWJUZnc/view). Both are
 beginner friendly and very popular.
 
 4. Now that you know you can make basic sentences you can with Kanji depending on your chosen book. You can use apps
-like [Anki]() for practicing Kanjis.
+like [Anki](https://apps.ankiweb.net?src=ukiyoserver-guide) for practicing Kanjis.
 
 5. At Last, now you need to just follow the book and start practicing speaking Japanese for which you can join a Discord
 Community or use apps like HelloTalk.
+
+## For people who knows basics
+
+Now that you know how to study and have some knowedege you can choose what you want to learn next and required resources for that. But do you know the best place to search for the all resources at one place. If you don't then [here](1) you can find all resource you need.
