@@ -3,7 +3,7 @@ module.exports = {
   content: [
     './*.md',
     './*js',
-    './**/*.html',
+    './**/**/**/*.html',
     './assets/js/*.js',
     './node_modules/preline/dist/*.js'
   ],
