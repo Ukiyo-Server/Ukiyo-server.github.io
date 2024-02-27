@@ -1,31 +1,35 @@
-# how to install and run locally
+# Doc for devs
 
-1. Install all Node packages
+Here you can find all information for this project.
 
-```sh
-npm install --force
-```
+## how to install and run locally
 
-2. Now install gems
+ 1. Install all Node packages
 
-```sh
-gem install bundler
-```
+     ```sh
+     npm install --force
+     ```
 
-then
+ 2. Now install gems
 
-```sh
-bundle install
-```
+     ```sh
+     gem install bundler
+     ```
 
-3. Now you can run locally
+     then
 
-```sh
-npm run dev
-```
+     ```sh
+     bundle install
+     ```
 
-4. For PWA -
+ 3. Now you can run locally
 
-```sh
-workbox generateSW workbox-config.js
-```
+     ```sh
+     npm run dev
+     ```
+
+ 4. For PWA -
+
+     ```sh
+     workbox generateSW workbox-config.js
+     ```

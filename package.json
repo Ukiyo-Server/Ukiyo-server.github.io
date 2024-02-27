@@ -1,6 +1,6 @@
 {
   "name": "ukiyo-server.github.io",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A website for Ukiyo server.   **Please do not use this repo for personal use.**",
   "main": "tailwind.config.js",
   "scripts": {
