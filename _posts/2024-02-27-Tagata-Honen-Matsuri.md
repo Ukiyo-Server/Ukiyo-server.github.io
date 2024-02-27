@@ -55,4 +55,4 @@ So, mark your calendars for March 15th, hop on a train to Tagata Shrine, and exp
   
   GETTING THERE: Tagata Shrine is about 5 minutes walk from Tagatajinja-mae Station (Meitetsu-Komaki Line). It can be reached in about 50 minutes from Nagoya station.
 
-  [Add to calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20240315T010000Z/20240315T070000Z&text=Tagata+Honen+Matsuri&details=The+Tagata+Honensai+Matsuri%26nbsp%3Bis+a+fertility+festival%2C+with+the+main+event+centering%26nbsp%3Bon+the+lively+procession+of+a+large+wooden+phallus+from+one+shrine+to+another.%0Ahttps%3A%2F%2Fen.japantravel.com%2Faichi%2Fthe-tagata-honen-matsuri%2F19293&location=Tagata+Shrine)
+  [Add to calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20240315T010000Z/20240315T070000Z&text=Tagata+Honen+Matsuri&details=Join+Ukiyo+Server%21%0Ahttps%3A%2F%2Fdiscord.gg%2Fukiyo-fu-shi-937243464079400990&location=Tagata+Shrine)
