@@ -4,7 +4,7 @@ title: Japanese Emoji Extravaganza 🇯🇵😊🎌
 description: Did you know that there's a plethora of emojis specifically related to Japan? Dive into this collection, offering a unique glimpse into the rich cultural tapestry of Japan through the lens of emoji. From traditional symbols to mouth-watering food and iconic landmarks, let's explore the world of Japanese emojis!
 author: Idle-Boy
 image:
-  path: https://cdn.discordapp.com/attachments/938314763082018816/1201427662250450974/emoji-blog-banner.png
+  path: https://ukiyoserver.live/assets/images/emoji-blog-banner.png
   alt: A image containing Japanese emojis.
 tags: Japanese-emojis
 category: Culture
