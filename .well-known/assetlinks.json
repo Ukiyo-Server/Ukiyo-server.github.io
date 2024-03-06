@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "uchuu",
+            "package_name": "org.uchuu.app",
+            "sha256_cert_fingerprints": [
+                "4D:A7:57:24:DE:39:11:25:5B:04:9D:B4:DC:64:B6:A3:BD:11:92:5C:AE:6E:C8:1B:6C:62:88:AB:19:66:1E:B0"
+            ]
+        }
+    }
+]
