@@ -5,6 +5,7 @@
   "main": "tailwind.config.js",
   "scripts": {
     "build": "postcss ./main.css -o ./assets/css/prod.css",
+    "build-w": "jekyll build",
     "watch": "postcss ./main.css -o ./assets/css/prod.css --watch",
     "start": "bundle exec jekyll serve --livereload",
     "dev": "concurrently 'postcss ./main.css -o ./assets/css/prod.css --watch'  'bundle exec jekyll serve --livereload'",

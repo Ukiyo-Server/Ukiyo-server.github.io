@@ -71,7 +71,9 @@ social:
 last-modified-at:
     date-format: '%d-%b-%y'
 
-include: ["node_modules/tailwindcss"]
+include: 
+  - ".well-known"
+  - "node_modules/tailwindcss"
 
 permalink: /:categories/:year-:month-:day/:title:output_ext
 
@@ -92,4 +94,4 @@ pwa:
     - "fonts/**/*"
 
 exclude: [CONTRIBUTING.md, README.md, Gemfile, Gemfile.lock, node_modules, package.json, package-lock.json, yarn.lock, .gitignore, .gitattributes, .editorconfig, .jekyll-metadata, .sass-cache, .vscode, .vs, .DS_Store, .env, .env.example, .env.sample, .env.production, .env.development, .env.test, CNAME, CODE_OF_CONDUCT.md, CONTRIBUTING.md, postcss.config.js, README-DEV.md, SECURITY.md, tailwind.config.js, LICENSE]
-keep_files: [404.html, .well-known/assetlinks.json]
+keep_files: [404.html, ./.well-known/assetlinks.json,]
