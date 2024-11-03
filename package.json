@@ -89,7 +89,7 @@
     "lodash.uniq": "^4.5.0",
     "mdn-data": "^2.0.30",
     "merge2": "^1.4.1",
-    "micromatch": "^4.0.5",
+    "micromatch": "^4.0.8",
     "minimatch": "^3.1.2",
     "mz": "^2.7.0",
     "nanoid": "^3.3.7",
