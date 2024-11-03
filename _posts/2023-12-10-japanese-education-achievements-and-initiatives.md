@@ -4,7 +4,7 @@ title: "Japanese Students Excel in Global Rankings and Government Plans Tuition-
 date: 2023-12-10
 author: Idle-Boy
 image:
-  path: https://ukiyoserver.live/assets/images/Banner-2_1.webp
+  path: https://ukiyo-server.github.io/assets/images/Banner-2_1.webp
   alt: banner
 tags: education society
 published: true

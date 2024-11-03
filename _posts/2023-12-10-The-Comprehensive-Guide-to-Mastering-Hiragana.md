@@ -4,7 +4,7 @@ title: The Comprehensive Guide to Mastering Hiragana
 author: Idle-Boy
 author_image: https://kutty.netlify.app/placeholder.jpg
 image:
-  path: https://ukiyoserver.live/assets/images/Banner-2_1.webp
+  path: https://ukiyo-server.github.io/assets/images/Banner-2_1.webp
   alt: fake banner
 tags: Japanese N5 Starter-Guide
 category: Guides
