@@ -1,4 +1,4 @@
 ---
-name: Jane Doe
-position: Developer
+name: Idle Boy
+position: Founder
 ---
